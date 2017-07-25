@@ -38,6 +38,8 @@
 		082E679B1F274F93003775A7 /* RLMergedRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67991F274F93003775A7 /* RLMergedRule.m */; };
 		082E67A21F274FEF003775A7 /* RLMultiRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67A01F274FEF003775A7 /* RLMultiRule.h */; };
 		082E67A31F274FEF003775A7 /* RLMultiRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67A11F274FEF003775A7 /* RLMultiRule.m */; };
+		082E67A61F27538C003775A7 /* RLMultiNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67A41F27538C003775A7 /* RLMultiNode.h */; };
+		082E67A71F27538C003775A7 /* RLMultiNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67A51F27538C003775A7 /* RLMultiNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		082E67991F274F93003775A7 /* RLMergedRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMergedRule.m; sourceTree = "<group>"; };
 		082E67A01F274FEF003775A7 /* RLMultiRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMultiRule.h; sourceTree = "<group>"; };
 		082E67A11F274FEF003775A7 /* RLMultiRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMultiRule.m; sourceTree = "<group>"; };
+		082E67A41F27538C003775A7 /* RLMultiNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMultiNode.h; sourceTree = "<group>"; };
+		082E67A51F27538C003775A7 /* RLMultiNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMultiNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,8 @@
 				082E67991F274F93003775A7 /* RLMergedRule.m */,
 				082E67781F273434003775A7 /* RLNode.h */,
 				082E67791F273434003775A7 /* RLNode.m */,
+				082E67A41F27538C003775A7 /* RLMultiNode.h */,
+				082E67A51F27538C003775A7 /* RLMultiNode.m */,
 				082E67801F273D1B003775A7 /* RLLiberation.h */,
 				082E67811F273D1B003775A7 /* RLLiberation.m */,
 				082E67841F27411E003775A7 /* RLCompoundLiberation.h */,
@@ -240,6 +246,7 @@
 				082E67961F274F85003775A7 /* RLCombinedRule.h in Headers */,
 				082E676B1F273369003775A7 /* ReactiveLoop.h in Headers */,
 				082E677E1F273485003775A7 /* RLEvent.h in Headers */,
+				082E67A61F27538C003775A7 /* RLMultiNode.h in Headers */,
 				082E67921F274F6A003775A7 /* RLOrRule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +411,7 @@
 				082E67771F273407003775A7 /* RLRule.m in Sources */,
 				082E67931F274F6A003775A7 /* RLOrRule.m in Sources */,
 				082E67971F274F85003775A7 /* RLCombinedRule.m in Sources */,
+				082E67A71F27538C003775A7 /* RLMultiNode.m in Sources */,
 				082E67831F273D1B003775A7 /* RLLiberation.m in Sources */,
 				082E677B1F273434003775A7 /* RLNode.m in Sources */,
 				082E677F1F273485003775A7 /* RLEvent.m in Sources */,

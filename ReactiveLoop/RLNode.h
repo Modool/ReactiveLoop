@@ -27,11 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RLNode (RLSubNode)
 
-@property (strong, readonly) NSArray *nodes;
 @property (strong, readonly) NSArray *rules;
-
-- (void)attachNode:(__kindof RLNode *)node;
-- (void)detachNode:(__kindof RLNode *)node;
 
 - (void)restrainRule:(__kindof RLRule *)rule;
 - (void)unrestrainRule:(__kindof RLRule *)rule;
