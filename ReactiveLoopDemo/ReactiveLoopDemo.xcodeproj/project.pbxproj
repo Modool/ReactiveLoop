@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		082E673F1F273335003775A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E673E1F273335003775A7 /* main.m */; };
+		082E67421F273335003775A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67411F273335003775A7 /* AppDelegate.m */; };
+		082E67451F273335003775A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67441F273335003775A7 /* ViewController.m */; };
+		082E67481F273335003775A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082E67461F273335003775A7 /* Main.storyboard */; };
+		082E674A1F273335003775A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 082E67491F273335003775A7 /* Assets.xcassets */; };
+		082E674D1F273335003775A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082E674B1F273335003775A7 /* LaunchScreen.storyboard */; };
+		082E67581F273335003775A7 /* ReactiveLoopDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67571F273335003775A7 /* ReactiveLoopDemoUITests.m */; };
+		082E676B1F273369003775A7 /* ReactiveLoop.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67691F273369003775A7 /* ReactiveLoop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		082E676E1F273369003775A7 /* ReactiveLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082E67671F273369003775A7 /* ReactiveLoop.framework */; };
+		082E676F1F273369003775A7 /* ReactiveLoop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 082E67671F273369003775A7 /* ReactiveLoop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		082E67771F273407003775A7 /* RLRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67751F273403003775A7 /* RLRule.m */; };
+		082E677A1F273434003775A7 /* RLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67781F273434003775A7 /* RLNode.h */; };
+		082E677B1F273434003775A7 /* RLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67791F273434003775A7 /* RLNode.m */; };
+		082E677E1F273485003775A7 /* RLEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E677C1F273485003775A7 /* RLEvent.h */; };
+		082E677F1F273485003775A7 /* RLEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E677D1F273485003775A7 /* RLEvent.m */; };
+		082E67821F273D1B003775A7 /* RLLiberation.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67801F273D1B003775A7 /* RLLiberation.h */; };
+		082E67831F273D1B003775A7 /* RLLiberation.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67811F273D1B003775A7 /* RLLiberation.m */; };
+		082E67861F27411E003775A7 /* RLCompoundLiberation.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67841F27411E003775A7 /* RLCompoundLiberation.h */; };
+		082E67871F27411E003775A7 /* RLCompoundLiberation.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67851F27411E003775A7 /* RLCompoundLiberation.m */; };
+		082E678A1F27452A003775A7 /* RLStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67881F27452A003775A7 /* RLStream.h */; };
+		082E678B1F27452A003775A7 /* RLStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67891F27452A003775A7 /* RLStream.m */; };
+		082E678E1F274F5F003775A7 /* RLAndRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E678C1F274F5F003775A7 /* RLAndRule.h */; };
+		082E678F1F274F5F003775A7 /* RLAndRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E678D1F274F5F003775A7 /* RLAndRule.m */; };
+		082E67921F274F6A003775A7 /* RLOrRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67901F274F6A003775A7 /* RLOrRule.h */; };
+		082E67931F274F6A003775A7 /* RLOrRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67911F274F6A003775A7 /* RLOrRule.m */; };
+		082E67961F274F85003775A7 /* RLCombinedRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67941F274F85003775A7 /* RLCombinedRule.h */; };
+		082E67971F274F85003775A7 /* RLCombinedRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67951F274F85003775A7 /* RLCombinedRule.m */; };
+		082E679A1F274F93003775A7 /* RLMergedRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67981F274F93003775A7 /* RLMergedRule.h */; };
+		082E679B1F274F93003775A7 /* RLMergedRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67991F274F93003775A7 /* RLMergedRule.m */; };
+		082E67A21F274FEF003775A7 /* RLMultiRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67A01F274FEF003775A7 /* RLMultiRule.h */; };
+		082E67A31F274FEF003775A7 /* RLMultiRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67A11F274FEF003775A7 /* RLMultiRule.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		082E67541F273335003775A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 082E67321F273335003775A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 082E67391F273335003775A7;
+			remoteInfo = ReactiveLoopDemo;
+		};
+		082E676C1F273369003775A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 082E67321F273335003775A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 082E67661F273369003775A7;
+			remoteInfo = ReactiveLoop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		082E67731F273369003775A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				082E676F1F273369003775A7 /* ReactiveLoop.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		082E673A1F273335003775A7 /* ReactiveLoopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveLoopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		082E673E1F273335003775A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		082E67401F273335003775A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		082E67411F273335003775A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		082E67431F273335003775A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		082E67441F273335003775A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		082E67471F273335003775A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		082E67491F273335003775A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		082E674C1F273335003775A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		082E674E1F273335003775A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		082E67531F273335003775A7 /* ReactiveLoopDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveLoopDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		082E67571F273335003775A7 /* ReactiveLoopDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveLoopDemoUITests.m; sourceTree = "<group>"; };
+		082E67591F273335003775A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		082E67671F273369003775A7 /* ReactiveLoop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveLoop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		082E67691F273369003775A7 /* ReactiveLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveLoop.h; sourceTree = "<group>"; };
+		082E676A1F273369003775A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		082E67741F273403003775A7 /* RLRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLRule.h; sourceTree = "<group>"; };
+		082E67751F273403003775A7 /* RLRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLRule.m; sourceTree = "<group>"; };
+		082E67781F273434003775A7 /* RLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLNode.h; sourceTree = "<group>"; };
+		082E67791F273434003775A7 /* RLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLNode.m; sourceTree = "<group>"; };
+		082E677C1F273485003775A7 /* RLEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLEvent.h; sourceTree = "<group>"; };
+		082E677D1F273485003775A7 /* RLEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLEvent.m; sourceTree = "<group>"; };
+		082E67801F273D1B003775A7 /* RLLiberation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLLiberation.h; sourceTree = "<group>"; };
+		082E67811F273D1B003775A7 /* RLLiberation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLLiberation.m; sourceTree = "<group>"; };
+		082E67841F27411E003775A7 /* RLCompoundLiberation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLCompoundLiberation.h; sourceTree = "<group>"; };
+		082E67851F27411E003775A7 /* RLCompoundLiberation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLCompoundLiberation.m; sourceTree = "<group>"; };
+		082E67881F27452A003775A7 /* RLStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLStream.h; sourceTree = "<group>"; };
+		082E67891F27452A003775A7 /* RLStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLStream.m; sourceTree = "<group>"; };
+		082E678C1F274F5F003775A7 /* RLAndRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLAndRule.h; sourceTree = "<group>"; };
+		082E678D1F274F5F003775A7 /* RLAndRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLAndRule.m; sourceTree = "<group>"; };
+		082E67901F274F6A003775A7 /* RLOrRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLOrRule.h; sourceTree = "<group>"; };
+		082E67911F274F6A003775A7 /* RLOrRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLOrRule.m; sourceTree = "<group>"; };
+		082E67941F274F85003775A7 /* RLCombinedRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLCombinedRule.h; sourceTree = "<group>"; };
+		082E67951F274F85003775A7 /* RLCombinedRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLCombinedRule.m; sourceTree = "<group>"; };
+		082E67981F274F93003775A7 /* RLMergedRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMergedRule.h; sourceTree = "<group>"; };
+		082E67991F274F93003775A7 /* RLMergedRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMergedRule.m; sourceTree = "<group>"; };
+		082E67A01F274FEF003775A7 /* RLMultiRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMultiRule.h; sourceTree = "<group>"; };
+		082E67A11F274FEF003775A7 /* RLMultiRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMultiRule.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		082E67371F273335003775A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082E676E1F273369003775A7 /* ReactiveLoop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		082E67501F273335003775A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		082E67631F273369003775A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		082E67311F273335003775A7 = {
+			isa = PBXGroup;
+			children = (
+				082E673C1F273335003775A7 /* ReactiveLoopDemo */,
+				082E67561F273335003775A7 /* ReactiveLoopDemoUITests */,
+				082E67681F273369003775A7 /* ReactiveLoop */,
+				082E673B1F273335003775A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		082E673B1F273335003775A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				082E673A1F273335003775A7 /* ReactiveLoopDemo.app */,
+				082E67531F273335003775A7 /* ReactiveLoopDemoUITests.xctest */,
+				082E67671F273369003775A7 /* ReactiveLoop.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		082E673C1F273335003775A7 /* ReactiveLoopDemo */ = {
+			isa = PBXGroup;
+			children = (
+				082E67401F273335003775A7 /* AppDelegate.h */,
+				082E67411F273335003775A7 /* AppDelegate.m */,
+				082E67431F273335003775A7 /* ViewController.h */,
+				082E67441F273335003775A7 /* ViewController.m */,
+				082E67461F273335003775A7 /* Main.storyboard */,
+				082E67491F273335003775A7 /* Assets.xcassets */,
+				082E674B1F273335003775A7 /* LaunchScreen.storyboard */,
+				082E674E1F273335003775A7 /* Info.plist */,
+				082E673D1F273335003775A7 /* Supporting Files */,
+			);
+			path = ReactiveLoopDemo;
+			sourceTree = "<group>";
+		};
+		082E673D1F273335003775A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				082E673E1F273335003775A7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		082E67561F273335003775A7 /* ReactiveLoopDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				082E67571F273335003775A7 /* ReactiveLoopDemoUITests.m */,
+				082E67591F273335003775A7 /* Info.plist */,
+			);
+			path = ReactiveLoopDemoUITests;
+			sourceTree = "<group>";
+		};
+		082E67681F273369003775A7 /* ReactiveLoop */ = {
+			isa = PBXGroup;
+			children = (
+				082E67691F273369003775A7 /* ReactiveLoop.h */,
+				082E676A1F273369003775A7 /* Info.plist */,
+				082E67881F27452A003775A7 /* RLStream.h */,
+				082E67891F27452A003775A7 /* RLStream.m */,
+				082E677C1F273485003775A7 /* RLEvent.h */,
+				082E677D1F273485003775A7 /* RLEvent.m */,
+				082E67741F273403003775A7 /* RLRule.h */,
+				082E67751F273403003775A7 /* RLRule.m */,
+				082E67A01F274FEF003775A7 /* RLMultiRule.h */,
+				082E67A11F274FEF003775A7 /* RLMultiRule.m */,
+				082E678C1F274F5F003775A7 /* RLAndRule.h */,
+				082E678D1F274F5F003775A7 /* RLAndRule.m */,
+				082E67901F274F6A003775A7 /* RLOrRule.h */,
+				082E67911F274F6A003775A7 /* RLOrRule.m */,
+				082E67941F274F85003775A7 /* RLCombinedRule.h */,
+				082E67951F274F85003775A7 /* RLCombinedRule.m */,
+				082E67981F274F93003775A7 /* RLMergedRule.h */,
+				082E67991F274F93003775A7 /* RLMergedRule.m */,
+				082E67781F273434003775A7 /* RLNode.h */,
+				082E67791F273434003775A7 /* RLNode.m */,
+				082E67801F273D1B003775A7 /* RLLiberation.h */,
+				082E67811F273D1B003775A7 /* RLLiberation.m */,
+				082E67841F27411E003775A7 /* RLCompoundLiberation.h */,
+				082E67851F27411E003775A7 /* RLCompoundLiberation.m */,
+			);
+			name = ReactiveLoop;
+			path = ../ReactiveLoop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		082E67641F273369003775A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082E678A1F27452A003775A7 /* RLStream.h in Headers */,
+				082E67861F27411E003775A7 /* RLCompoundLiberation.h in Headers */,
+				082E67821F273D1B003775A7 /* RLLiberation.h in Headers */,
+				082E678E1F274F5F003775A7 /* RLAndRule.h in Headers */,
+				082E67A21F274FEF003775A7 /* RLMultiRule.h in Headers */,
+				082E679A1F274F93003775A7 /* RLMergedRule.h in Headers */,
+				082E677A1F273434003775A7 /* RLNode.h in Headers */,
+				082E67961F274F85003775A7 /* RLCombinedRule.h in Headers */,
+				082E676B1F273369003775A7 /* ReactiveLoop.h in Headers */,
+				082E677E1F273485003775A7 /* RLEvent.h in Headers */,
+				082E67921F274F6A003775A7 /* RLOrRule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		082E67391F273335003775A7 /* ReactiveLoopDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 082E675C1F273335003775A7 /* Build configuration list for PBXNativeTarget "ReactiveLoopDemo" */;
+			buildPhases = (
+				082E67361F273335003775A7 /* Sources */,
+				082E67371F273335003775A7 /* Frameworks */,
+				082E67381F273335003775A7 /* Resources */,
+				082E67731F273369003775A7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				082E676D1F273369003775A7 /* PBXTargetDependency */,
+			);
+			name = ReactiveLoopDemo;
+			productName = ReactiveLoopDemo;
+			productReference = 082E673A1F273335003775A7 /* ReactiveLoopDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		082E67521F273335003775A7 /* ReactiveLoopDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 082E675F1F273335003775A7 /* Build configuration list for PBXNativeTarget "ReactiveLoopDemoUITests" */;
+			buildPhases = (
+				082E674F1F273335003775A7 /* Sources */,
+				082E67501F273335003775A7 /* Frameworks */,
+				082E67511F273335003775A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				082E67551F273335003775A7 /* PBXTargetDependency */,
+			);
+			name = ReactiveLoopDemoUITests;
+			productName = ReactiveLoopDemoUITests;
+			productReference = 082E67531F273335003775A7 /* ReactiveLoopDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		082E67661F273369003775A7 /* ReactiveLoop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 082E67721F273369003775A7 /* Build configuration list for PBXNativeTarget "ReactiveLoop" */;
+			buildPhases = (
+				082E67621F273369003775A7 /* Sources */,
+				082E67631F273369003775A7 /* Frameworks */,
+				082E67641F273369003775A7 /* Headers */,
+				082E67651F273369003775A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactiveLoop;
+			productName = ReactiveLoop;
+			productReference = 082E67671F273369003775A7 /* ReactiveLoop.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		082E67321F273335003775A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RL;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Modool;
+				TargetAttributes = {
+					082E67391F273335003775A7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
+					082E67521F273335003775A7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 082E67391F273335003775A7;
+					};
+					082E67661F273369003775A7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 082E67351F273335003775A7 /* Build configuration list for PBXProject "ReactiveLoopDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 082E67311F273335003775A7;
+			productRefGroup = 082E673B1F273335003775A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				082E67391F273335003775A7 /* ReactiveLoopDemo */,
+				082E67521F273335003775A7 /* ReactiveLoopDemoUITests */,
+				082E67661F273369003775A7 /* ReactiveLoop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		082E67381F273335003775A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082E674D1F273335003775A7 /* LaunchScreen.storyboard in Resources */,
+				082E674A1F273335003775A7 /* Assets.xcassets in Resources */,
+				082E67481F273335003775A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		082E67511F273335003775A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		082E67651F273369003775A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		082E67361F273335003775A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082E67451F273335003775A7 /* ViewController.m in Sources */,
+				082E67421F273335003775A7 /* AppDelegate.m in Sources */,
+				082E673F1F273335003775A7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		082E674F1F273335003775A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082E67581F273335003775A7 /* ReactiveLoopDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		082E67621F273369003775A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082E67A31F274FEF003775A7 /* RLMultiRule.m in Sources */,
+				082E678F1F274F5F003775A7 /* RLAndRule.m in Sources */,
+				082E67871F27411E003775A7 /* RLCompoundLiberation.m in Sources */,
+				082E678B1F27452A003775A7 /* RLStream.m in Sources */,
+				082E67771F273407003775A7 /* RLRule.m in Sources */,
+				082E67931F274F6A003775A7 /* RLOrRule.m in Sources */,
+				082E67971F274F85003775A7 /* RLCombinedRule.m in Sources */,
+				082E67831F273D1B003775A7 /* RLLiberation.m in Sources */,
+				082E677B1F273434003775A7 /* RLNode.m in Sources */,
+				082E677F1F273485003775A7 /* RLEvent.m in Sources */,
+				082E679B1F274F93003775A7 /* RLMergedRule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		082E67551F273335003775A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 082E67391F273335003775A7 /* ReactiveLoopDemo */;
+			targetProxy = 082E67541F273335003775A7 /* PBXContainerItemProxy */;
+		};
+		082E676D1F273369003775A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 082E67661F273369003775A7 /* ReactiveLoop */;
+			targetProxy = 082E676C1F273369003775A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		082E67461F273335003775A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				082E67471F273335003775A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		082E674B1F273335003775A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				082E674C1F273335003775A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		082E675A1F273335003775A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		082E675B1F273335003775A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		082E675D1F273335003775A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ReactiveLoopDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.markejave.ReactiveLoopDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		082E675E1F273335003775A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ReactiveLoopDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.markejave.ReactiveLoopDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		082E67601F273335003775A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ReactiveLoopDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.markejave.ReactiveLoopDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ReactiveLoopDemo;
+			};
+			name = Debug;
+		};
+		082E67611F273335003775A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ReactiveLoopDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.markejave.ReactiveLoopDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ReactiveLoopDemo;
+			};
+			name = Release;
+		};
+		082E67701F273369003775A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.markejave.ReactiveLoop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		082E67711F273369003775A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.markejave.ReactiveLoop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		082E67351F273335003775A7 /* Build configuration list for PBXProject "ReactiveLoopDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				082E675A1F273335003775A7 /* Debug */,
+				082E675B1F273335003775A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		082E675C1F273335003775A7 /* Build configuration list for PBXNativeTarget "ReactiveLoopDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				082E675D1F273335003775A7 /* Debug */,
+				082E675E1F273335003775A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		082E675F1F273335003775A7 /* Build configuration list for PBXNativeTarget "ReactiveLoopDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				082E67601F273335003775A7 /* Debug */,
+				082E67611F273335003775A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		082E67721F273369003775A7 /* Build configuration list for PBXNativeTarget "ReactiveLoop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				082E67701F273369003775A7 /* Debug */,
+				082E67711F273369003775A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 082E67321F273335003775A7 /* Project object */;
+}
