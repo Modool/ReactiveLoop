@@ -7,7 +7,18 @@
 //
 
 #import "RLStream.h"
+#import "RLObserver.h"
 
-@interface RLEvent : RLStream
+NS_ASSUME_NONNULL_BEGIN
+
+@interface RLEvent : RLStream<RLObserver>
+
++ (instancetype)event;
 
 @end
+
+@interface RLReplayEvent : RLEvent
+
+@end
+
+NS_ASSUME_NONNULL_END

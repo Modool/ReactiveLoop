@@ -12,22 +12,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RLNode : RLStream
+@interface RLNode : NSObject
+
+@property (nonatomic, assign, readonly) BOOL enabled;
+
+@property (nonatomic, strong, readonly) id value;
 
 + (instancetype)node;
-- (instancetype)init;
-
-@end
-
-@interface RLNode ()
-
-@property (assign, readonly) BOOL enabled;
++ (instancetype)nodeWithRule:(RLRule *)rule;
++ (instancetype)nodeWithRules:(NSArray<RLRule *> *)rules;
 
 @end
 
 @interface RLNode (RLSubNode)
 
-@property (strong, readonly) NSArray *rules;
+@property (strong, readonly) RLRule *rule;
 
 - (void)restrainRule:(__kindof RLRule *)rule;
 - (void)unrestrainRule:(__kindof RLRule *)rule;

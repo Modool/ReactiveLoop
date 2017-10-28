@@ -24,22 +24,29 @@
 		082E677F1F273485003775A7 /* RLEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E677D1F273485003775A7 /* RLEvent.m */; };
 		082E67821F273D1B003775A7 /* RLLiberation.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67801F273D1B003775A7 /* RLLiberation.h */; };
 		082E67831F273D1B003775A7 /* RLLiberation.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67811F273D1B003775A7 /* RLLiberation.m */; };
-		082E67861F27411E003775A7 /* RLCompoundLiberation.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67841F27411E003775A7 /* RLCompoundLiberation.h */; };
-		082E67871F27411E003775A7 /* RLCompoundLiberation.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67851F27411E003775A7 /* RLCompoundLiberation.m */; };
 		082E678A1F27452A003775A7 /* RLStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67881F27452A003775A7 /* RLStream.h */; };
 		082E678B1F27452A003775A7 /* RLStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67891F27452A003775A7 /* RLStream.m */; };
-		082E678E1F274F5F003775A7 /* RLAndRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E678C1F274F5F003775A7 /* RLAndRule.h */; };
-		082E678F1F274F5F003775A7 /* RLAndRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E678D1F274F5F003775A7 /* RLAndRule.m */; };
-		082E67921F274F6A003775A7 /* RLOrRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67901F274F6A003775A7 /* RLOrRule.h */; };
-		082E67931F274F6A003775A7 /* RLOrRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67911F274F6A003775A7 /* RLOrRule.m */; };
-		082E67961F274F85003775A7 /* RLCombinedRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67941F274F85003775A7 /* RLCombinedRule.h */; };
-		082E67971F274F85003775A7 /* RLCombinedRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67951F274F85003775A7 /* RLCombinedRule.m */; };
-		082E679A1F274F93003775A7 /* RLMergedRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67981F274F93003775A7 /* RLMergedRule.h */; };
-		082E679B1F274F93003775A7 /* RLMergedRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67991F274F93003775A7 /* RLMergedRule.m */; };
-		082E67A21F274FEF003775A7 /* RLMultiRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67A01F274FEF003775A7 /* RLMultiRule.h */; };
-		082E67A31F274FEF003775A7 /* RLMultiRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67A11F274FEF003775A7 /* RLMultiRule.m */; };
 		082E67A61F27538C003775A7 /* RLMultiNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67A41F27538C003775A7 /* RLMultiNode.h */; };
 		082E67A71F27538C003775A7 /* RLMultiNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67A51F27538C003775A7 /* RLMultiNode.m */; };
+		084DEC311FA4859B008BF2D2 /* RLObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC2F1FA4859B008BF2D2 /* RLObserver.h */; };
+		084DEC321FA4859B008BF2D2 /* RLObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC301FA4859B008BF2D2 /* RLObserver.m */; };
+		084DEC331FA4859B008BF2D2 /* RLObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC301FA4859B008BF2D2 /* RLObserver.m */; };
+		084DEC361FA485B3008BF2D2 /* RLObserver+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC341FA485B3008BF2D2 /* RLObserver+Private.h */; };
+		084DEC431FA487BD008BF2D2 /* RLEXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC3D1FA487BD008BF2D2 /* RLEXTScope.h */; };
+		084DEC441FA487BD008BF2D2 /* RLMetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC3E1FA487BD008BF2D2 /* RLMetamacros.h */; };
+		084DEC471FA490B9008BF2D2 /* RLStream+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC451FA490B9008BF2D2 /* RLStream+Private.h */; };
+		084DEC4C1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC4A1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.h */; };
+		084DEC4D1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC4B1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m */; };
+		084DEC4E1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC4B1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m */; };
+		084DEC511FA4A86C008BF2D2 /* NSObject+RLDeallocating.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC4F1FA4A86C008BF2D2 /* NSObject+RLDeallocating.h */; };
+		084DEC521FA4A86C008BF2D2 /* NSObject+RLDeallocating.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC501FA4A86C008BF2D2 /* NSObject+RLDeallocating.m */; };
+		084DEC531FA4A86C008BF2D2 /* NSObject+RLDeallocating.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC501FA4A86C008BF2D2 /* NSObject+RLDeallocating.m */; };
+		084DEC561FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC541FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.h */; };
+		084DEC571FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC551FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m */; };
+		084DEC581FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC551FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m */; };
+		084DEC5B1FA4B527008BF2D2 /* NSObject+RLSelectorStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC591FA4B527008BF2D2 /* NSObject+RLSelectorStream.h */; };
+		084DEC5C1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC5A1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m */; };
+		084DEC5D1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC5A1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		080DC5CE1FA4F97800982213 /* RLRule+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RLRule+Private.h"; sourceTree = "<group>"; };
 		082E673A1F273335003775A7 /* ReactiveLoopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveLoopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		082E673E1F273335003775A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		082E67401F273335003775A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,7 +97,6 @@
 		082E67591F273335003775A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		082E67671F273369003775A7 /* ReactiveLoop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveLoop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		082E67691F273369003775A7 /* ReactiveLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveLoop.h; sourceTree = "<group>"; };
-		082E676A1F273369003775A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		082E67741F273403003775A7 /* RLRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLRule.h; sourceTree = "<group>"; };
 		082E67751F273403003775A7 /* RLRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLRule.m; sourceTree = "<group>"; };
 		082E67781F273434003775A7 /* RLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLNode.h; sourceTree = "<group>"; };
@@ -98,22 +105,25 @@
 		082E677D1F273485003775A7 /* RLEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLEvent.m; sourceTree = "<group>"; };
 		082E67801F273D1B003775A7 /* RLLiberation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLLiberation.h; sourceTree = "<group>"; };
 		082E67811F273D1B003775A7 /* RLLiberation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLLiberation.m; sourceTree = "<group>"; };
-		082E67841F27411E003775A7 /* RLCompoundLiberation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLCompoundLiberation.h; sourceTree = "<group>"; };
-		082E67851F27411E003775A7 /* RLCompoundLiberation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLCompoundLiberation.m; sourceTree = "<group>"; };
 		082E67881F27452A003775A7 /* RLStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLStream.h; sourceTree = "<group>"; };
 		082E67891F27452A003775A7 /* RLStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLStream.m; sourceTree = "<group>"; };
-		082E678C1F274F5F003775A7 /* RLAndRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLAndRule.h; sourceTree = "<group>"; };
-		082E678D1F274F5F003775A7 /* RLAndRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLAndRule.m; sourceTree = "<group>"; };
-		082E67901F274F6A003775A7 /* RLOrRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLOrRule.h; sourceTree = "<group>"; };
-		082E67911F274F6A003775A7 /* RLOrRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLOrRule.m; sourceTree = "<group>"; };
-		082E67941F274F85003775A7 /* RLCombinedRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLCombinedRule.h; sourceTree = "<group>"; };
-		082E67951F274F85003775A7 /* RLCombinedRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLCombinedRule.m; sourceTree = "<group>"; };
-		082E67981F274F93003775A7 /* RLMergedRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMergedRule.h; sourceTree = "<group>"; };
-		082E67991F274F93003775A7 /* RLMergedRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMergedRule.m; sourceTree = "<group>"; };
-		082E67A01F274FEF003775A7 /* RLMultiRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMultiRule.h; sourceTree = "<group>"; };
-		082E67A11F274FEF003775A7 /* RLMultiRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMultiRule.m; sourceTree = "<group>"; };
 		082E67A41F27538C003775A7 /* RLMultiNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMultiNode.h; sourceTree = "<group>"; };
 		082E67A51F27538C003775A7 /* RLMultiNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMultiNode.m; sourceTree = "<group>"; };
+		084DEC2F1FA4859B008BF2D2 /* RLObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLObserver.h; sourceTree = "<group>"; };
+		084DEC301FA4859B008BF2D2 /* RLObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLObserver.m; sourceTree = "<group>"; };
+		084DEC341FA485B3008BF2D2 /* RLObserver+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RLObserver+Private.h"; sourceTree = "<group>"; };
+		084DEC3D1FA487BD008BF2D2 /* RLEXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLEXTScope.h; sourceTree = "<group>"; };
+		084DEC3E1FA487BD008BF2D2 /* RLMetamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMetamacros.h; sourceTree = "<group>"; };
+		084DEC451FA490B9008BF2D2 /* RLStream+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RLStream+Private.h"; sourceTree = "<group>"; };
+		084DEC4A1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RLKVOWrapper.h"; sourceTree = "<group>"; };
+		084DEC4B1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RLKVOWrapper.m"; sourceTree = "<group>"; };
+		084DEC4F1FA4A86C008BF2D2 /* NSObject+RLDeallocating.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RLDeallocating.h"; sourceTree = "<group>"; };
+		084DEC501FA4A86C008BF2D2 /* NSObject+RLDeallocating.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RLDeallocating.m"; sourceTree = "<group>"; };
+		084DEC541FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLEXTRuntimeExtensions.h; sourceTree = "<group>"; };
+		084DEC551FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLEXTRuntimeExtensions.m; sourceTree = "<group>"; };
+		084DEC591FA4B527008BF2D2 /* NSObject+RLSelectorStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RLSelectorStream.h"; sourceTree = "<group>"; };
+		084DEC5A1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RLSelectorStream.m"; sourceTree = "<group>"; };
+		084DEC5E1FA4B588008BF2D2 /* RLMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,35 +208,46 @@
 		082E67681F273369003775A7 /* ReactiveLoop */ = {
 			isa = PBXGroup;
 			children = (
+				084DEC391FA487BD008BF2D2 /* extobjc */,
 				082E67691F273369003775A7 /* ReactiveLoop.h */,
-				082E676A1F273369003775A7 /* Info.plist */,
+				084DEC5E1FA4B588008BF2D2 /* RLMacros.h */,
+				082E67801F273D1B003775A7 /* RLLiberation.h */,
+				082E67811F273D1B003775A7 /* RLLiberation.m */,
 				082E67881F27452A003775A7 /* RLStream.h */,
 				082E67891F27452A003775A7 /* RLStream.m */,
+				084DEC451FA490B9008BF2D2 /* RLStream+Private.h */,
+				084DEC2F1FA4859B008BF2D2 /* RLObserver.h */,
+				084DEC301FA4859B008BF2D2 /* RLObserver.m */,
+				084DEC341FA485B3008BF2D2 /* RLObserver+Private.h */,
+				084DEC4A1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.h */,
+				084DEC4B1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m */,
+				084DEC4F1FA4A86C008BF2D2 /* NSObject+RLDeallocating.h */,
+				084DEC501FA4A86C008BF2D2 /* NSObject+RLDeallocating.m */,
+				084DEC591FA4B527008BF2D2 /* NSObject+RLSelectorStream.h */,
+				084DEC5A1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m */,
 				082E677C1F273485003775A7 /* RLEvent.h */,
 				082E677D1F273485003775A7 /* RLEvent.m */,
 				082E67741F273403003775A7 /* RLRule.h */,
 				082E67751F273403003775A7 /* RLRule.m */,
-				082E67A01F274FEF003775A7 /* RLMultiRule.h */,
-				082E67A11F274FEF003775A7 /* RLMultiRule.m */,
-				082E678C1F274F5F003775A7 /* RLAndRule.h */,
-				082E678D1F274F5F003775A7 /* RLAndRule.m */,
-				082E67901F274F6A003775A7 /* RLOrRule.h */,
-				082E67911F274F6A003775A7 /* RLOrRule.m */,
-				082E67941F274F85003775A7 /* RLCombinedRule.h */,
-				082E67951F274F85003775A7 /* RLCombinedRule.m */,
-				082E67981F274F93003775A7 /* RLMergedRule.h */,
-				082E67991F274F93003775A7 /* RLMergedRule.m */,
+				080DC5CE1FA4F97800982213 /* RLRule+Private.h */,
 				082E67781F273434003775A7 /* RLNode.h */,
 				082E67791F273434003775A7 /* RLNode.m */,
 				082E67A41F27538C003775A7 /* RLMultiNode.h */,
 				082E67A51F27538C003775A7 /* RLMultiNode.m */,
-				082E67801F273D1B003775A7 /* RLLiberation.h */,
-				082E67811F273D1B003775A7 /* RLLiberation.m */,
-				082E67841F27411E003775A7 /* RLCompoundLiberation.h */,
-				082E67851F27411E003775A7 /* RLCompoundLiberation.m */,
 			);
 			name = ReactiveLoop;
 			path = ../ReactiveLoop;
+			sourceTree = "<group>";
+		};
+		084DEC391FA487BD008BF2D2 /* extobjc */ = {
+			isa = PBXGroup;
+			children = (
+				084DEC541FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.h */,
+				084DEC551FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m */,
+				084DEC3D1FA487BD008BF2D2 /* RLEXTScope.h */,
+				084DEC3E1FA487BD008BF2D2 /* RLMetamacros.h */,
+			);
+			path = extobjc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,18 +257,21 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084DEC5B1FA4B527008BF2D2 /* NSObject+RLSelectorStream.h in Headers */,
+				084DEC441FA487BD008BF2D2 /* RLMetamacros.h in Headers */,
+				084DEC561FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.h in Headers */,
+				084DEC511FA4A86C008BF2D2 /* NSObject+RLDeallocating.h in Headers */,
+				084DEC361FA485B3008BF2D2 /* RLObserver+Private.h in Headers */,
 				082E678A1F27452A003775A7 /* RLStream.h in Headers */,
-				082E67861F27411E003775A7 /* RLCompoundLiberation.h in Headers */,
 				082E67821F273D1B003775A7 /* RLLiberation.h in Headers */,
-				082E678E1F274F5F003775A7 /* RLAndRule.h in Headers */,
-				082E67A21F274FEF003775A7 /* RLMultiRule.h in Headers */,
-				082E679A1F274F93003775A7 /* RLMergedRule.h in Headers */,
 				082E677A1F273434003775A7 /* RLNode.h in Headers */,
-				082E67961F274F85003775A7 /* RLCombinedRule.h in Headers */,
 				082E676B1F273369003775A7 /* ReactiveLoop.h in Headers */,
+				084DEC311FA4859B008BF2D2 /* RLObserver.h in Headers */,
+				084DEC471FA490B9008BF2D2 /* RLStream+Private.h in Headers */,
 				082E677E1F273485003775A7 /* RLEvent.h in Headers */,
+				084DEC4C1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.h in Headers */,
 				082E67A61F27538C003775A7 /* RLMultiNode.h in Headers */,
-				082E67921F274F6A003775A7 /* RLOrRule.h in Headers */,
+				084DEC431FA487BD008BF2D2 /* RLEXTScope.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +411,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				082E67451F273335003775A7 /* ViewController.m in Sources */,
+				084DEC4D1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m in Sources */,
+				084DEC321FA4859B008BF2D2 /* RLObserver.m in Sources */,
+				084DEC571FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m in Sources */,
 				082E67421F273335003775A7 /* AppDelegate.m in Sources */,
+				084DEC5C1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m in Sources */,
+				084DEC521FA4A86C008BF2D2 /* NSObject+RLDeallocating.m in Sources */,
 				082E673F1F273335003775A7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,18 +433,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				082E67A31F274FEF003775A7 /* RLMultiRule.m in Sources */,
-				082E678F1F274F5F003775A7 /* RLAndRule.m in Sources */,
-				082E67871F27411E003775A7 /* RLCompoundLiberation.m in Sources */,
+				084DEC581FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m in Sources */,
 				082E678B1F27452A003775A7 /* RLStream.m in Sources */,
 				082E67771F273407003775A7 /* RLRule.m in Sources */,
-				082E67931F274F6A003775A7 /* RLOrRule.m in Sources */,
-				082E67971F274F85003775A7 /* RLCombinedRule.m in Sources */,
+				084DEC331FA4859B008BF2D2 /* RLObserver.m in Sources */,
+				084DEC4E1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m in Sources */,
+				084DEC531FA4A86C008BF2D2 /* NSObject+RLDeallocating.m in Sources */,
 				082E67A71F27538C003775A7 /* RLMultiNode.m in Sources */,
 				082E67831F273D1B003775A7 /* RLLiberation.m in Sources */,
 				082E677B1F273434003775A7 /* RLNode.m in Sources */,
+				084DEC5D1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m in Sources */,
 				082E677F1F273485003775A7 /* RLEvent.m in Sources */,
-				082E679B1F274F93003775A7 /* RLMergedRule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,6 +701,7 @@
 				082E67711F273369003775A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

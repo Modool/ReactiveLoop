@@ -12,14 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RLMultiNode : RLNode
 
+@property (nonatomic, strong, readonly) NSArray *nodes;
+
 - (void)attachNode:(__kindof RLNode *)node;
 - (void)detachNode:(__kindof RLNode *)node;
-
-@end
-
-@interface RLMultiNode ()
-
-@property (strong, readonly) NSArray *nodes;
 
 @end
 

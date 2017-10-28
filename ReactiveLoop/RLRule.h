@@ -6,37 +6,33 @@
 //  Copyright © 2017年 Modool. All rights reserved.
 //
 
-#import "RLStream.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RLRule : RLStream
+@class RLStream;
+@interface RLRule : NSObject
 
-+ (instancetype)rule;
-+ (instancetype)ruleWithBlock:(id _Nullable (^)(_Nullable id value))block;
+@property (nonatomic, strong, readonly) RLStream *output;
 
-- (void)ignoreRule:(__kindof RLRule *)rule;
-
-@end
-
-@interface RLRule ()
-
-@property (strong, readonly, nullable) id value;
++ (instancetype)ruleWithInput:(RLStream *)input;
 
 @end
 
 @interface RLRule (RLRuleOperation)
 
-+ (__kindof RLRule *)combineRules:(NSArray<__kindof RLRule *> *)rules;
++ (__kindof RLRule *)return:(id)value;
 
 + (__kindof RLRule *)mergeRules:(NSArray<__kindof RLRule *> *)rules;
 
++ (__kindof RLRule *)combineRules:(NSArray<__kindof RLRule *> *)rules;
+
 - (__kindof RLRule *)combine:(__kindof RLRule *)rule;
 
-- (__kindof RLRule *)merge:(__kindof RLRule *)rule;
-
++ (__kindof RLRule *)and:(NSArray<__kindof RLRule *> *)rules;
 - (__kindof RLRule *)and;
 
++ (__kindof RLRule *)or:(NSArray<__kindof RLRule *> *)rules;
 - (__kindof RLRule *)or;
 
 - (__kindof RLRule *)not;

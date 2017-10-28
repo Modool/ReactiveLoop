@@ -10,13 +10,27 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class RLStream, RLLiberation;
+typedef RLStream * _Nullable (^RLStreamBindBlock)(id _Nullable value, BOOL *stop);
+
+@protocol RLObserver;
 @interface RLStream : NSObject
+
++ (RLStream *)create:(RLLiberation * (^)(id<RLObserver> observer))observeCompletion;
+
++ (__kindof RLStream *)never;
 
 + (__kindof RLStream *)empty;
 
 + (__kindof RLStream *)return:(nullable id)value;
 
-typedef RLStream * _Nullable (^RLStreamBindBlock)(id _Nullable value, BOOL *stop);
++ (__kindof RLStream *)join:(id<NSFastEnumeration>)streams block:(RLStream * (^)(id, id))block;
+
++ (__kindof RLStream *)zip:(id<NSFastEnumeration>)streams;
+
++ (__kindof RLStream *)combineLatest:(id<NSFastEnumeration>)signals;
+
++ (__kindof RLStream *)merge:(id<NSFastEnumeration>)streams;
 
 - (__kindof RLStream *)bind:(RLStreamBindBlock (^)(void))block;
 
@@ -31,6 +45,21 @@ typedef RLStream * _Nullable (^RLStreamBindBlock)(id _Nullable value, BOOL *stop
 - (__kindof RLStream *)ignore:(nullable id)value;
 
 - (__kindof RLStream *)ignore;
+
+- (__kindof RLStream *)zipWith:(RLStream *)stream;
+
+- (__kindof RLStream *)takeUntil:(RLStream *)streamTrigger;
+
+- (__kindof RLStream *)combineLatestWith:(RLStream *)stream;
+
+- (__kindof RLStream *)merge:(RLStream *)stream;
+
+- (__kindof RLStream *)doOutput:(void (^)(id value))block;
+- (__kindof RLStream *)doComplet:(void (^)(void))block;
+
+- (RLLiberation *)observe:(id<RLObserver>)observer;
+- (RLLiberation *)observeOutput:(void (^)(id value))output;
+- (RLLiberation *)observeOutput:(void (^)(id value))output completion:(void (^)())completion;
 
 @end
 
