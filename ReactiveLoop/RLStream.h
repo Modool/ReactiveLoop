@@ -22,7 +22,7 @@ typedef RLStream * _Nullable (^RLStreamBindBlock)(id _Nullable value, BOOL *stop
 
 + (__kindof RLStream *)empty;
 
-+ (__kindof RLStream *)return:(nullable id)value;
++ (__kindof RLStream *)return:(_Nullable id)value;
 
 + (__kindof RLStream *)join:(id<NSFastEnumeration>)streams block:(RLStream * (^)(id, id))block;
 
@@ -38,11 +38,11 @@ typedef RLStream * _Nullable (^RLStreamBindBlock)(id _Nullable value, BOOL *stop
 
 - (__kindof RLStream *)map:(id _Nullable (^)(id _Nullable value))block;
 
-- (__kindof RLStream *)mapReplace:(nullable id)object;
+- (__kindof RLStream *)mapReplace:(_Nullable id)object;
 
 - (__kindof RLStream *)filter:(BOOL (^)(id _Nullable value))block;
 
-- (__kindof RLStream *)ignore:(nullable id)value;
+- (__kindof RLStream *)ignore:(_Nullable id)value;
 
 - (__kindof RLStream *)ignore;
 
@@ -53,6 +53,10 @@ typedef RLStream * _Nullable (^RLStreamBindBlock)(id _Nullable value, BOOL *stop
 - (__kindof RLStream *)combineLatestWith:(RLStream *)stream;
 
 - (__kindof RLStream *)merge:(RLStream *)stream;
+
+- (_Nullable id)first;
+- (_Nullable id)firstOrDefault:(_Nullable id)defaultValue;
+- (_Nullable id)firstOrDefault:(_Nullable id)defaultValue success:(BOOL * _Nullable)success;
 
 - (__kindof RLStream *)doOutput:(void (^)(id value))block;
 - (__kindof RLStream *)doComplet:(void (^)(void))block;
@@ -67,7 +71,7 @@ typedef RLStream * _Nullable (^RLStreamBindBlock)(id _Nullable value, BOOL *stop
 
 @property (copy) NSString *name;
 
-- (instancetype)setNameWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1, 2);
+- (instancetype)setNameWithFormat:(NSString *)format, ...;
 
 @end
 

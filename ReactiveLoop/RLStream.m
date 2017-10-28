@@ -346,6 +346,50 @@
     return [[RLStream merge:@[ self, stream ]] setNameWithFormat:@"[%@] -merge: %@", self.name, stream];
 }
 
+- (id)first{
+    return [self firstOrDefault:nil];
+}
+
+- (id)firstOrDefault:(id)defaultValue{
+    return [self firstOrDefault:defaultValue success:NULL];
+}
+
+- (id)firstOrDefault:(id)defaultValue success:(BOOL *)success;{
+    NSCondition *condition = [[NSCondition alloc] init];
+    condition.name = [NSString stringWithFormat:@"[%@] -firstOrDefault: %@ success:error:", self.name, defaultValue];
+    
+    __block id value = defaultValue;
+    __block BOOL done = NO;
+    
+    // Ensures that we don't pass values across thread boundaries by reference.
+    __block BOOL localSuccess;
+    
+    [self observeOutput:^(id x) {
+        [condition lock];
+        value = x;
+        localSuccess = YES;
+        done = YES;
+        [condition broadcast];
+        [condition unlock];
+    } completion:^{
+        [condition lock];
+        localSuccess = YES;
+        done = YES;
+        [condition broadcast];
+        [condition unlock];
+    }];
+    
+    [condition lock];
+    while (!done) {
+        [condition wait];
+    }
+    
+    if (success != NULL) *success = localSuccess;
+    
+    [condition unlock];
+    return value;
+}
+
 + (__kindof RLStream *)merge:(id<NSFastEnumeration>)streams {
     NSMutableArray *copiedStreams = [[NSMutableArray alloc] init];
     for (RLStream *stream in streams) {

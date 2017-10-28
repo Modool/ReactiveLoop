@@ -12,6 +12,8 @@
 
 @interface RLRule ()
 
+@property (nonatomic, copy) NSString *name;
+
 @property (nonatomic, strong) RLStream *input;
 @property (nonatomic, strong) RLStream *output;
 
@@ -32,6 +34,19 @@
         
         _output = replayEvent;
     }
+    return self;
+}
+
+- (instancetype)setNameWithFormat:(NSString *)format, ... {
+    NSCParameterAssert(format != nil);
+    
+    va_list args;
+    va_start(args, format);
+    
+    NSString *str = [[NSString alloc] initWithFormat:format arguments:args];
+    va_end(args);
+    
+    self.name = str;
     return self;
 }
 

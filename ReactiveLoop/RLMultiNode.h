@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) NSArray *nodes;
 
+@property (nonatomic, copy) BOOL (^shouldFeedback)(NSArray<RLNode *> *nodes);
+
 - (void)attachNode:(__kindof RLNode *)node;
 - (void)detachNode:(__kindof RLNode *)node;
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080DC5D61FA529DA00982213 /* UIButton+RLNodeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 080DC5D41FA529DA00982213 /* UIButton+RLNodeSupport.h */; };
+		080DC5D71FA529DA00982213 /* UIButton+RLNodeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 080DC5D51FA529DA00982213 /* UIButton+RLNodeSupport.m */; };
+		080DC5D81FA529DA00982213 /* UIButton+RLNodeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 080DC5D51FA529DA00982213 /* UIButton+RLNodeSupport.m */; };
 		082E673F1F273335003775A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E673E1F273335003775A7 /* main.m */; };
 		082E67421F273335003775A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67411F273335003775A7 /* AppDelegate.m */; };
 		082E67451F273335003775A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67441F273335003775A7 /* ViewController.m */; };
@@ -82,6 +85,9 @@
 
 /* Begin PBXFileReference section */
 		080DC5CE1FA4F97800982213 /* RLRule+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RLRule+Private.h"; sourceTree = "<group>"; };
+		080DC5D11FA51D3200982213 /* RLNode+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RLNode+Private.h"; sourceTree = "<group>"; };
+		080DC5D41FA529DA00982213 /* UIButton+RLNodeSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+RLNodeSupport.h"; sourceTree = "<group>"; };
+		080DC5D51FA529DA00982213 /* UIButton+RLNodeSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RLNodeSupport.m"; sourceTree = "<group>"; };
 		082E673A1F273335003775A7 /* ReactiveLoopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveLoopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		082E673E1F273335003775A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		082E67401F273335003775A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -232,8 +238,11 @@
 				080DC5CE1FA4F97800982213 /* RLRule+Private.h */,
 				082E67781F273434003775A7 /* RLNode.h */,
 				082E67791F273434003775A7 /* RLNode.m */,
+				080DC5D11FA51D3200982213 /* RLNode+Private.h */,
 				082E67A41F27538C003775A7 /* RLMultiNode.h */,
 				082E67A51F27538C003775A7 /* RLMultiNode.m */,
+				080DC5D41FA529DA00982213 /* UIButton+RLNodeSupport.h */,
+				080DC5D51FA529DA00982213 /* UIButton+RLNodeSupport.m */,
 			);
 			name = ReactiveLoop;
 			path = ../ReactiveLoop;
@@ -261,6 +270,7 @@
 				084DEC441FA487BD008BF2D2 /* RLMetamacros.h in Headers */,
 				084DEC561FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.h in Headers */,
 				084DEC511FA4A86C008BF2D2 /* NSObject+RLDeallocating.h in Headers */,
+				080DC5D61FA529DA00982213 /* UIButton+RLNodeSupport.h in Headers */,
 				084DEC361FA485B3008BF2D2 /* RLObserver+Private.h in Headers */,
 				082E678A1F27452A003775A7 /* RLStream.h in Headers */,
 				082E67821F273D1B003775A7 /* RLLiberation.h in Headers */,
@@ -412,6 +422,7 @@
 			files = (
 				082E67451F273335003775A7 /* ViewController.m in Sources */,
 				084DEC4D1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m in Sources */,
+				080DC5D71FA529DA00982213 /* UIButton+RLNodeSupport.m in Sources */,
 				084DEC321FA4859B008BF2D2 /* RLObserver.m in Sources */,
 				084DEC571FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m in Sources */,
 				082E67421F273335003775A7 /* AppDelegate.m in Sources */,
@@ -438,6 +449,7 @@
 				082E67771F273407003775A7 /* RLRule.m in Sources */,
 				084DEC331FA4859B008BF2D2 /* RLObserver.m in Sources */,
 				084DEC4E1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m in Sources */,
+				080DC5D81FA529DA00982213 /* UIButton+RLNodeSupport.m in Sources */,
 				084DEC531FA4A86C008BF2D2 /* NSObject+RLDeallocating.m in Sources */,
 				082E67A71F27538C003775A7 /* RLMultiNode.m in Sources */,
 				082E67831F273D1B003775A7 /* RLLiberation.m in Sources */,

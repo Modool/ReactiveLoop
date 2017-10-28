@@ -7,33 +7,58 @@
 //
 
 #import "RLMultiNode.h"
+#import "RLNode+Private.h"
 
-@interface RLMultiNode ()
+#import "RLEXTScope.h"
 
-@property (nonatomic, strong) NSArray<RLNode *> *nodes;
+@interface RLMultiNode (){
+    NSMutableArray<RLNode *> *_mutableNodes;
+}
+
+@property (nonatomic, strong, readonly) NSMutableArray<RLFeedback *> *mutableSubNodeFeedbacks;
 
 @end
 
 @implementation RLMultiNode
+@synthesize nodes = _mutableNodes;
 
 - (instancetype)init{
     if (self = [super init]) {
-        self.nodes = @[];
+        _mutableNodes = [NSMutableArray new];
+        _mutableSubNodeFeedbacks = [NSMutableArray new];
     }
     return self;
+}
+
+- (void)feedbackIfNeeds{
+    BOOL shouldFeedback = self.shouldFeedback ? self.shouldFeedback([[self nodes] copy]) : YES;
+    if (!shouldFeedback) return;
+    
+    NSMutableArray *values = [NSMutableArray new];
+    for (RLNode *node in [[self nodes] copy]) {
+        [values addObject:[[node relatedInfoStream] firstOrDefault:NSNull.null] ?: NSNull.null];
+    }
+    [self updateValue:values];
+    [self performFeedbacksWithValue:values];
 }
 
 - (void)attachNode:(__kindof RLNode *)node;{
     [self detachNode:node];
     
-    self.nodes = [[self nodes]  arrayByAddingObject:node];
+    [_mutableNodes addObject:node];
+    
+    @weakify(self);
+    RLFeedback *feedback = [node feedbackObserve:^(id  _Nonnull value) {
+        @strongify(self);
+        [self feedbackIfNeeds];
+    }];
+    if (feedback) {
+        [_mutableSubNodeFeedbacks addObject:feedback];
+    }
 }
 
 - (void)detachNode:(__kindof RLNode *)node;{
-    NSMutableArray *nodes = [[self nodes] mutableCopy];
-    [nodes removeObject:node];
-    
-    self.nodes = [nodes copy];
+    [_mutableNodes removeObject:node];
 }
 
 @end

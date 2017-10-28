@@ -12,9 +12,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface RLFeedback : NSObject
+
+- (void)cancel;
+
+@end
+
 @interface RLNode : NSObject
 
-@property (nonatomic, assign, readonly) BOOL enabled;
+@property (nonatomic, assign) BOOL enabled;
+
+@property (nonatomic, copy, readonly) NSString *name;
 
 @property (nonatomic, strong, readonly) id value;
 
@@ -22,22 +30,27 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)nodeWithRule:(RLRule *)rule;
 + (instancetype)nodeWithRules:(NSArray<RLRule *> *)rules;
 
+- (instancetype)setNameWithFormat:(NSString *)format, ...;
+
 @end
 
 @interface RLNode (RLSubNode)
 
-@property (strong, readonly) RLRule *rule;
+@property (nonatomic, strong, readonly) RLRule *rule;
 
-- (void)restrainRule:(__kindof RLRule *)rule;
-- (void)unrestrainRule:(__kindof RLRule *)rule;
+@end
+
+@interface RLNode (RLNodeInfo)
+
+@property (nonatomic, strong, readonly) RLStream *relatedInfoStream;
+
+- (void)attachInfo:(RLStream *)info;
 
 @end
 
 @interface RLNode (RLObserve)
 
-- (__kindof RLLiberation *)feedback:(void (^)())block;
-- (__kindof RLLiberation *)feedbackWithError:(void (^)(NSError *error))errorBlock;
-- (__kindof RLLiberation *)feedback:(void (^)())block error:(void (^)(NSError *error))errorBlock;
+- (RLFeedback *)feedbackObserve:(void (^)(id value))block;
 
 @end
 

@@ -13,9 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 @class RLStream;
 @interface RLRule : NSObject
 
+@property (nonatomic, copy, readonly) NSString *name;
+
 @property (nonatomic, strong, readonly) RLStream *output;
 
 + (instancetype)ruleWithInput:(RLStream *)input;
+
+- (instancetype)setNameWithFormat:(NSString *)format, ...;
 
 @end
 
