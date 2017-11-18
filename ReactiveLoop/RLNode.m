@@ -10,8 +10,10 @@
 #import "RLRule.h"
 #import "RLEvent.h"
 #import "RLFeedback+Private.h"
+#import "NSObject+RLKVOWrapper.h"
 
 #import "RLEXTScope.h"
+#import "RLEXTKeyPathCoding.h"
 
 @interface RLNode ()
 
@@ -20,8 +22,6 @@
 @property (nonatomic, copy) NSString *name;
 
 @property (nonatomic, strong, readonly) RLReplayEvent *infoEvent;
-
-@property (nonatomic, strong, readonly) RLRule *rule;
 
 @property (nonatomic, strong, readonly) NSMutableArray<RLRule *> *rules;
 
@@ -32,31 +32,40 @@
 @implementation RLNode
 
 + (instancetype)node;{
-    return [self nodeWithRules:@[]];
+    return [[self alloc] init];
 }
 
 + (instancetype)nodeWithRule:(RLRule *)rule;{
     NSParameterAssert(rule);
-    return [self nodeWithRules:@[rule]];
+    return [[self alloc] initWithRule:rule];
 }
 
 + (instancetype)nodeWithRules:(NSArray<RLRule *> *)rules;{
-    return [[self alloc] initWithRules:rules];
+    rules = rules ?: @[];
+    if ([rules count] == 0) {
+        return [self node];
+    } else if ([rules count] == 1) {
+        return [[self alloc] initWithRule:[rules firstObject]];
+    } else {
+        return [[self alloc] initWithRule:[RLRule mergeRules:rules]];
+    }
 }
 
-- (instancetype)initWithRules:(NSArray<RLRule *> *)rules;{
+- (instancetype)initWithRule:(RLRule *)rule;{
+    if (self = [self init]) {
+        _rule = rule;
+    }
+    return self;
+}
+
+- (instancetype)init{
     if (self = [super init]) {
         _enabled = YES;
-        _rules = [NSMutableArray<RLRule *> arrayWithArray:rules ?: @[]];
         _feedbacks = [[NSMutableArray<RLFeedback *> alloc] init];
         _infoEvent = [RLReplayEvent event];
-        _rule = [RLRule mergeRules:rules];
         
         @weakify(self);
-        [[[_rule output] filter:^BOOL(id  _Nullable value) {
-            @strongify(self);
-            return [self enabled];
-        }] observeOutput:^(id  _Nonnull value) {
+        [_infoEvent observeOutput:^(id  _Nonnull value) {
             @strongify(self);
             [self updateValue:value];
             [self performFeedbacksWithValue:value];
@@ -98,7 +107,7 @@
 
 - (void)performFeedbacksWithValue:(id)value{
     for (RLFeedback *feedback in [self feedbacks]) {
-        feedback.block(value);
+        feedback.block(feedback.value, value);
     }
 }
 
@@ -107,13 +116,28 @@
 }
 
 - (void)attachStream:(RLStream *)info;{
-    [info observe:[self infoEvent]];
+    RLStream *outputStream = info;
+    if ([self rule]) {
+        outputStream = [[RLStream combineLatest:@[info, RLObserve(self, enabled), [[self rule] output]]] filter:^BOOL(NSArray *values) {
+            id enabled = values[1];
+            id allowed = values[2];
+            if (enabled == [NSNull null] || allowed == [NSNull null] ) return NO;
+            if (![allowed isKindOfClass:[NSNumber class]]) return NO;
+            
+            return [enabled boolValue] && [allowed boolValue];
+        }];
+    }
+    [outputStream observe:[self infoEvent]];
 }
 
 #pragma mark - public
 
-- (RLFeedback *)RLFeedbackObserve:(void (^)(id value))block;{
-    RLFeedback *feedback = [RLFeedback feedbackWithBlock:block node:self];
+- (RLFeedback *)feedbackObserve:(void (^)(_Nullable id value, _Nullable id source))observeBlock;{
+    return [self feedbackValue:nil observe:observeBlock];
+}
+
+- (RLFeedback *)feedbackValue:(nullable id)value observe:(void (^)(_Nullable id value, _Nullable id source))observeBlock;{
+    RLFeedback *feedback = [RLFeedback feedbackValue:value node:self block:observeBlock];
     [self addFeedback:feedback];
     
     return feedback;

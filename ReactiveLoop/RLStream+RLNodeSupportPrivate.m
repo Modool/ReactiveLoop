@@ -23,6 +23,7 @@
 }
 
 - (RLNode *)nodeWithRule:(RLRule *)rule;{
+    NSParameterAssert(rule != nil);
     RLNode *node = [[RLNode nodeWithRule:rule] setNameWithFormat:@"%@.%@", self.name, rule.name];
     
     [node attachStream:self];
@@ -31,6 +32,8 @@
 }
 
 - (RLNode *)nodeWithRules:(NSArray<RLRule *> *)rules;{
+    NSParameterAssert(rules != nil && [rules count] != 0);
+    
     NSString *name = [[rules valueForKey:@"name"] componentsJoinedByString:@"."];
     RLNode *node = [[RLNode nodeWithRules:rules] setNameWithFormat:@"%@.%@", self.name, name];
     

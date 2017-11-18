@@ -12,22 +12,23 @@
 
 @interface RLFeedback ()
 
-@property (nonatomic, copy, readonly) void (^block)(id value);
-
 @property (nonatomic, weak, readonly) RLNode *node;
+
+@property (nonatomic, copy, readonly) void (^block)(_Nullable id value, _Nullable id source);
 
 @end
 
 @implementation RLFeedback
 
-+ (instancetype)feedbackWithBlock:(void (^)(id value))block node:(RLNode *)node;{
-    return [[self alloc] initWithBlock:block node:node];
++ (instancetype)feedbackValue:(nullable id)value node:(RLNode *)node block:(void (^)(_Nullable id value, _Nullable id source))block;{
+    return [[self alloc] initWithValue:value node:node block:block];
 }
 
-- (instancetype)initWithBlock:(void (^)(id value))block node:(RLNode *)node;{
+- (instancetype)initWithValue:(nullable id)value node:(RLNode *)node block:(void (^)(_Nullable id value, _Nullable id source))block;{
     if (self = [super init]) {
-        _block = [block copy];
+        _value = value;
         _node = node;
+        _block = [block copy];
     }
     return self;
 }

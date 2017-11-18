@@ -48,7 +48,7 @@
     [_mutableNodes addObject:node];
     
     @weakify(self);
-    RLFeedback *feedback = [node feedbackObserve:^(id  _Nonnull value) {
+    RLFeedback *feedback = [node feedbackObserve:^(id value, id source) {
         @strongify(self);
         [self feedbackIfNeeds];
     }];

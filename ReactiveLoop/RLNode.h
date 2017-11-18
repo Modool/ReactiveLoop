@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) id value;
 
+@property (nonatomic, strong, readonly) RLRule *rule;
+
 @property (nonatomic, assign) BOOL enabled;
 
 + (instancetype)node;
@@ -44,7 +46,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RLNode (RLeedbackObserve)
 
-- (RLFeedback *)feedbackObserve:(void (^)(id value))block;
+- (RLFeedback *)feedbackObserve:(void (^)(_Nullable id value, _Nullable id source))observeBlock;
+- (RLFeedback *)feedbackValue:(nullable id)value observe:(void (^)(_Nullable id value, _Nullable id source))observeBlock;
 
 @end
 

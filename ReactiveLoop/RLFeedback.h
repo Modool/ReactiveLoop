@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RLFeedback : NSObject
 
+@property (nonatomic, strong, readonly, nullable) id value;
+
 - (void)cancel;
 
 @end
