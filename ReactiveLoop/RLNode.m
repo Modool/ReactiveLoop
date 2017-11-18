@@ -118,13 +118,15 @@
 - (void)attachStream:(RLStream *)info;{
     RLStream *outputStream = info;
     if ([self rule]) {
-        outputStream = [[RLStream combineLatest:@[info, RLObserve(self, enabled), [[self rule] output]]] filter:^BOOL(NSArray *values) {
+        outputStream = [[[RLStream combineLatest:@[info, RLObserve(self, enabled), [[self rule] output]]] filter:^BOOL(NSArray *values) {
             id enabled = values[1];
             id allowed = values[2];
             if (enabled == [NSNull null] || allowed == [NSNull null] ) return NO;
             if (![allowed isKindOfClass:[NSNumber class]]) return NO;
             
             return [enabled boolValue] && [allowed boolValue];
+        }] map:^id _Nullable(NSArray *values) {
+            return [values firstObject];
         }];
     }
     [outputStream observe:[self infoEvent]];
