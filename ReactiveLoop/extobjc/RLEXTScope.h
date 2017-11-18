@@ -88,7 +88,7 @@
     _Pragma("clang diagnostic pop")
 
 /*** implementation details follow ***/
-typedef void (^rl_cleanupBlock_t)();
+typedef void (^rl_cleanupBlock_t)(void);
 
 static inline void rl_executeCleanupBlock (__strong rl_cleanupBlock_t *block) {
     (*block)();

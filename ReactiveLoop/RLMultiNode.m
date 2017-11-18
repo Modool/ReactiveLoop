@@ -24,8 +24,8 @@
 
 - (instancetype)init{
     if (self = [super init]) {
-        _mutableNodes = [NSMutableArray new];
-        _mutableSubNodeFeedbacks = [NSMutableArray new];
+        _mutableNodes = [[NSMutableArray<RLNode *> alloc] init];
+        _mutableSubNodeFeedbacks = [[NSMutableArray<RLFeedback *> alloc] init];
     }
     return self;
 }
@@ -34,7 +34,7 @@
     BOOL shouldFeedback = self.shouldFeedback ? self.shouldFeedback([[self nodes] copy]) : YES;
     if (!shouldFeedback) return;
     
-    NSMutableArray *values = [NSMutableArray new];
+    NSMutableArray *values = [[NSMutableArray alloc] init];
     for (RLNode *node in [[self nodes] copy]) {
         [values addObject:[[node relatedInfoStream] firstOrDefault:NSNull.null] ?: NSNull.null];
     }

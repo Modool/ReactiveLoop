@@ -7,39 +7,11 @@
 //
 
 #import "RLNode.h"
-#import "RLNode+Private.h"
 #import "RLRule.h"
 #import "RLEvent.h"
+#import "RLFeedback+Private.h"
 
 #import "RLEXTScope.h"
-
-@interface RLFeedback ()
-
-@property (nonatomic, copy, readonly) void (^block)(id value);
-
-@property (nonatomic, weak, readonly) RLNode *node;
-
-@end
-
-@implementation RLFeedback
-
-+ (instancetype)feedbackWithBlock:(void (^)(id value))block node:(RLNode *)node;{
-    return [[self alloc] initWithBlock:block node:node];
-}
-
-- (instancetype)initWithBlock:(void (^)(id value))block node:(RLNode *)node;{
-    if (self = [super init]) {
-        _block = [block copy];
-        _node = node;
-    }
-    return self;
-}
-
-- (void)cancel{
-    [[self node] removeFeedback:self];
-}
-
-@end
 
 @interface RLNode ()
 
@@ -75,8 +47,8 @@
 - (instancetype)initWithRules:(NSArray<RLRule *> *)rules;{
     if (self = [super init]) {
         _enabled = YES;
-        _rules = [NSMutableArray arrayWithArray:rules ?: @[]];
-        _feedbacks = [NSMutableArray new];
+        _rules = [NSMutableArray<RLRule *> arrayWithArray:rules ?: @[]];
+        _feedbacks = [[NSMutableArray<RLFeedback *> alloc] init];
         _infoEvent = [RLReplayEvent event];
         _rule = [RLRule mergeRules:rules];
         
@@ -112,7 +84,7 @@
     return [self infoEvent];
 }
 
-#pragma mark - feedback
+#pragma mark - private
 
 - (void)addFeedback:(RLFeedback *)feedback;{
     [self removeFeedback:feedback];
@@ -122,13 +94,6 @@
 
 - (void)removeFeedback:(RLFeedback *)feedback{
     [[self feedbacks] removeObject:feedback];
-}
-
-- (RLFeedback *)feedbackObserve:(void (^)(id value))block;{
-    RLFeedback *feedback = [RLFeedback feedbackWithBlock:block node:self];
-    [self addFeedback:feedback];
-    
-    return feedback;
 }
 
 - (void)performFeedbacksWithValue:(id)value{
@@ -141,9 +106,17 @@
     self.value = value;
 }
 
-- (void)attachInfo:(RLStream *)info;{
+- (void)attachStream:(RLStream *)info;{
     [info observe:[self infoEvent]];
 }
 
+#pragma mark - public
+
+- (RLFeedback *)RLFeedbackObserve:(void (^)(id value))block;{
+    RLFeedback *feedback = [RLFeedback feedbackWithBlock:block node:self];
+    [self addFeedback:feedback];
+    
+    return feedback;
+}
 
 @end

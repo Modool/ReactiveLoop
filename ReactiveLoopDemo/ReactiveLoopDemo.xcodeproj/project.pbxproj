@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		080DC5D61FA529DA00982213 /* UIButton+RLNodeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 080DC5D41FA529DA00982213 /* UIButton+RLNodeSupport.h */; };
-		080DC5D71FA529DA00982213 /* UIButton+RLNodeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 080DC5D51FA529DA00982213 /* UIButton+RLNodeSupport.m */; };
+		080DC5D61FA529DA00982213 /* UIButton+RLNodeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 080DC5D41FA529DA00982213 /* UIButton+RLNodeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		080DC5D81FA529DA00982213 /* UIButton+RLNodeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 080DC5D51FA529DA00982213 /* UIButton+RLNodeSupport.m */; };
 		082E673F1F273335003775A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E673E1F273335003775A7 /* main.m */; };
 		082E67421F273335003775A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67411F273335003775A7 /* AppDelegate.m */; };
@@ -21,35 +20,56 @@
 		082E676E1F273369003775A7 /* ReactiveLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082E67671F273369003775A7 /* ReactiveLoop.framework */; };
 		082E676F1F273369003775A7 /* ReactiveLoop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 082E67671F273369003775A7 /* ReactiveLoop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		082E67771F273407003775A7 /* RLRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67751F273403003775A7 /* RLRule.m */; };
-		082E677A1F273434003775A7 /* RLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67781F273434003775A7 /* RLNode.h */; };
+		082E677A1F273434003775A7 /* RLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67781F273434003775A7 /* RLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		082E677B1F273434003775A7 /* RLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67791F273434003775A7 /* RLNode.m */; };
-		082E677E1F273485003775A7 /* RLEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E677C1F273485003775A7 /* RLEvent.h */; };
+		082E677E1F273485003775A7 /* RLEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E677C1F273485003775A7 /* RLEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		082E677F1F273485003775A7 /* RLEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E677D1F273485003775A7 /* RLEvent.m */; };
-		082E67821F273D1B003775A7 /* RLLiberation.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67801F273D1B003775A7 /* RLLiberation.h */; };
+		082E67821F273D1B003775A7 /* RLLiberation.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67801F273D1B003775A7 /* RLLiberation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		082E67831F273D1B003775A7 /* RLLiberation.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67811F273D1B003775A7 /* RLLiberation.m */; };
-		082E678A1F27452A003775A7 /* RLStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67881F27452A003775A7 /* RLStream.h */; };
+		082E678A1F27452A003775A7 /* RLStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67881F27452A003775A7 /* RLStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		082E678B1F27452A003775A7 /* RLStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67891F27452A003775A7 /* RLStream.m */; };
-		082E67A61F27538C003775A7 /* RLMultiNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67A41F27538C003775A7 /* RLMultiNode.h */; };
+		082E67A61F27538C003775A7 /* RLMultiNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67A41F27538C003775A7 /* RLMultiNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		082E67A71F27538C003775A7 /* RLMultiNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67A51F27538C003775A7 /* RLMultiNode.m */; };
-		084DEC311FA4859B008BF2D2 /* RLObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC2F1FA4859B008BF2D2 /* RLObserver.h */; };
-		084DEC321FA4859B008BF2D2 /* RLObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC301FA4859B008BF2D2 /* RLObserver.m */; };
+		084DEC311FA4859B008BF2D2 /* RLObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC2F1FA4859B008BF2D2 /* RLObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		084DEC331FA4859B008BF2D2 /* RLObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC301FA4859B008BF2D2 /* RLObserver.m */; };
 		084DEC361FA485B3008BF2D2 /* RLObserver+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC341FA485B3008BF2D2 /* RLObserver+Private.h */; };
 		084DEC431FA487BD008BF2D2 /* RLEXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC3D1FA487BD008BF2D2 /* RLEXTScope.h */; };
 		084DEC441FA487BD008BF2D2 /* RLMetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC3E1FA487BD008BF2D2 /* RLMetamacros.h */; };
 		084DEC471FA490B9008BF2D2 /* RLStream+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC451FA490B9008BF2D2 /* RLStream+Private.h */; };
-		084DEC4C1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC4A1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.h */; };
-		084DEC4D1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC4B1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m */; };
+		084DEC4C1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC4A1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		084DEC4E1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC4B1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m */; };
-		084DEC511FA4A86C008BF2D2 /* NSObject+RLDeallocating.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC4F1FA4A86C008BF2D2 /* NSObject+RLDeallocating.h */; };
-		084DEC521FA4A86C008BF2D2 /* NSObject+RLDeallocating.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC501FA4A86C008BF2D2 /* NSObject+RLDeallocating.m */; };
+		084DEC511FA4A86C008BF2D2 /* NSObject+RLDeallocating.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC4F1FA4A86C008BF2D2 /* NSObject+RLDeallocating.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		084DEC531FA4A86C008BF2D2 /* NSObject+RLDeallocating.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC501FA4A86C008BF2D2 /* NSObject+RLDeallocating.m */; };
 		084DEC561FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC541FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.h */; };
-		084DEC571FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC551FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m */; };
 		084DEC581FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC551FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m */; };
-		084DEC5B1FA4B527008BF2D2 /* NSObject+RLSelectorStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC591FA4B527008BF2D2 /* NSObject+RLSelectorStream.h */; };
-		084DEC5C1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC5A1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m */; };
+		084DEC5B1FA4B527008BF2D2 /* NSObject+RLSelectorStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC591FA4B527008BF2D2 /* NSObject+RLSelectorStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		084DEC5D1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DEC5A1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m */; };
+		089DEAB51FC02CDF0016A087 /* RLFeedbackCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 089DEAB31FC02CDF0016A087 /* RLFeedbackCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089DEAB61FC02CDF0016A087 /* RLFeedbackCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 089DEAB41FC02CDF0016A087 /* RLFeedbackCenter.m */; };
+		089DEAB91FC041B60016A087 /* RLFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = 089DEAB71FC041B60016A087 /* RLFeedback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089DEABA1FC041B60016A087 /* RLFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 089DEAB81FC041B60016A087 /* RLFeedback.m */; };
+		089DEABD1FC041F40016A087 /* RLFeedback+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 089DEABB1FC041F40016A087 /* RLFeedback+Private.h */; };
+		089DEABF1FC0433E0016A087 /* RLRule+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 080DC5CE1FA4F97800982213 /* RLRule+Private.h */; };
+		089DEAC01FC043450016A087 /* RLNode+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 080DC5D11FA51D3200982213 /* RLNode+Private.h */; };
+		089DEAC11FC043700016A087 /* RLMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 084DEC5E1FA4B588008BF2D2 /* RLMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089DEAC21FC043700016A087 /* RLRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67741F273403003775A7 /* RLRule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A73C101FC0061000CDC83D /* UIControl+RLStreamSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A73C0D1FC0060900CDC83D /* UIControl+RLStreamSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A73C111FC0061000CDC83D /* UIControl+RLStreamSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A73C0E1FC0060900CDC83D /* UIControl+RLStreamSupport.m */; };
+		08A73C151FC00B6900CDC83D /* NSObject+RLNodeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A73C131FC00B6400CDC83D /* NSObject+RLNodeSupport.m */; };
+		08A73C161FC00B6D00CDC83D /* NSObject+RLNodeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A73C121FC00B6400CDC83D /* NSObject+RLNodeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A73C1D1FC00E1A00CDC83D /* RLStream+RLNodeSupportPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A73C1B1FC00E1A00CDC83D /* RLStream+RLNodeSupportPrivate.h */; };
+		08A73C1E1FC00E1A00CDC83D /* RLStream+RLNodeSupportPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A73C1C1FC00E1A00CDC83D /* RLStream+RLNodeSupportPrivate.m */; };
+		08A73C211FC0120D00CDC83D /* UIView+RLNodeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A73C1F1FC0120D00CDC83D /* UIView+RLNodeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A73C221FC0120D00CDC83D /* UIView+RLNodeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A73C201FC0120D00CDC83D /* UIView+RLNodeSupport.m */; };
+		08A73C251FC0121C00CDC83D /* UIViewController+RLNodeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A73C231FC0121C00CDC83D /* UIViewController+RLNodeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A73C261FC0121C00CDC83D /* UIViewController+RLNodeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A73C241FC0121C00CDC83D /* UIViewController+RLNodeSupport.m */; };
+		08A73C291FC0124000CDC83D /* UITabBarController+RLNodeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A73C271FC0124000CDC83D /* UITabBarController+RLNodeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A73C2A1FC0124000CDC83D /* UITabBarController+RLNodeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A73C281FC0124000CDC83D /* UITabBarController+RLNodeSupport.m */; };
+		08A73C2C1FC01F9F00CDC83D /* RLEXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A73C2B1FC01F9F00CDC83D /* RLEXTKeyPathCoding.h */; };
+		08A73C2F1FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A73C2D1FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A73C301FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A73C2E1FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.m */; };
+		08A73C331FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A73C311FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A73C341FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A73C321FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +150,28 @@
 		084DEC591FA4B527008BF2D2 /* NSObject+RLSelectorStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RLSelectorStream.h"; sourceTree = "<group>"; };
 		084DEC5A1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RLSelectorStream.m"; sourceTree = "<group>"; };
 		084DEC5E1FA4B588008BF2D2 /* RLMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLMacros.h; sourceTree = "<group>"; };
+		089DEAB31FC02CDF0016A087 /* RLFeedbackCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLFeedbackCenter.h; sourceTree = "<group>"; };
+		089DEAB41FC02CDF0016A087 /* RLFeedbackCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLFeedbackCenter.m; sourceTree = "<group>"; };
+		089DEAB71FC041B60016A087 /* RLFeedback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLFeedback.h; sourceTree = "<group>"; };
+		089DEAB81FC041B60016A087 /* RLFeedback.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLFeedback.m; sourceTree = "<group>"; };
+		089DEABB1FC041F40016A087 /* RLFeedback+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RLFeedback+Private.h"; sourceTree = "<group>"; };
+		08A73C0D1FC0060900CDC83D /* UIControl+RLStreamSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+RLStreamSupport.h"; sourceTree = "<group>"; };
+		08A73C0E1FC0060900CDC83D /* UIControl+RLStreamSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+RLStreamSupport.m"; sourceTree = "<group>"; };
+		08A73C121FC00B6400CDC83D /* NSObject+RLNodeSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RLNodeSupport.h"; sourceTree = "<group>"; };
+		08A73C131FC00B6400CDC83D /* NSObject+RLNodeSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RLNodeSupport.m"; sourceTree = "<group>"; };
+		08A73C1B1FC00E1A00CDC83D /* RLStream+RLNodeSupportPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RLStream+RLNodeSupportPrivate.h"; sourceTree = "<group>"; };
+		08A73C1C1FC00E1A00CDC83D /* RLStream+RLNodeSupportPrivate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RLStream+RLNodeSupportPrivate.m"; sourceTree = "<group>"; };
+		08A73C1F1FC0120D00CDC83D /* UIView+RLNodeSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RLNodeSupport.h"; sourceTree = "<group>"; };
+		08A73C201FC0120D00CDC83D /* UIView+RLNodeSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RLNodeSupport.m"; sourceTree = "<group>"; };
+		08A73C231FC0121C00CDC83D /* UIViewController+RLNodeSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RLNodeSupport.h"; sourceTree = "<group>"; };
+		08A73C241FC0121C00CDC83D /* UIViewController+RLNodeSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RLNodeSupport.m"; sourceTree = "<group>"; };
+		08A73C271FC0124000CDC83D /* UITabBarController+RLNodeSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+RLNodeSupport.h"; sourceTree = "<group>"; };
+		08A73C281FC0124000CDC83D /* UITabBarController+RLNodeSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+RLNodeSupport.m"; sourceTree = "<group>"; };
+		08A73C2B1FC01F9F00CDC83D /* RLEXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLEXTKeyPathCoding.h; sourceTree = "<group>"; };
+		08A73C2D1FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+RLNodeSupport.h"; sourceTree = "<group>"; };
+		08A73C2E1FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+RLNodeSupport.m"; sourceTree = "<group>"; };
+		08A73C311FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+RLNodeSupport.h"; sourceTree = "<group>"; };
+		08A73C321FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+RLNodeSupport.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +273,8 @@
 				084DEC501FA4A86C008BF2D2 /* NSObject+RLDeallocating.m */,
 				084DEC591FA4B527008BF2D2 /* NSObject+RLSelectorStream.h */,
 				084DEC5A1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m */,
+				08A73C0D1FC0060900CDC83D /* UIControl+RLStreamSupport.h */,
+				08A73C0E1FC0060900CDC83D /* UIControl+RLStreamSupport.m */,
 				082E677C1F273485003775A7 /* RLEvent.h */,
 				082E677D1F273485003775A7 /* RLEvent.m */,
 				082E67741F273403003775A7 /* RLRule.h */,
@@ -241,8 +285,27 @@
 				080DC5D11FA51D3200982213 /* RLNode+Private.h */,
 				082E67A41F27538C003775A7 /* RLMultiNode.h */,
 				082E67A51F27538C003775A7 /* RLMultiNode.m */,
+				089DEAB71FC041B60016A087 /* RLFeedback.h */,
+				089DEAB81FC041B60016A087 /* RLFeedback.m */,
+				089DEABB1FC041F40016A087 /* RLFeedback+Private.h */,
+				089DEAB31FC02CDF0016A087 /* RLFeedbackCenter.h */,
+				089DEAB41FC02CDF0016A087 /* RLFeedbackCenter.m */,
+				08A73C1B1FC00E1A00CDC83D /* RLStream+RLNodeSupportPrivate.h */,
+				08A73C1C1FC00E1A00CDC83D /* RLStream+RLNodeSupportPrivate.m */,
+				08A73C121FC00B6400CDC83D /* NSObject+RLNodeSupport.h */,
+				08A73C131FC00B6400CDC83D /* NSObject+RLNodeSupport.m */,
 				080DC5D41FA529DA00982213 /* UIButton+RLNodeSupport.h */,
 				080DC5D51FA529DA00982213 /* UIButton+RLNodeSupport.m */,
+				08A73C1F1FC0120D00CDC83D /* UIView+RLNodeSupport.h */,
+				08A73C201FC0120D00CDC83D /* UIView+RLNodeSupport.m */,
+				08A73C231FC0121C00CDC83D /* UIViewController+RLNodeSupport.h */,
+				08A73C241FC0121C00CDC83D /* UIViewController+RLNodeSupport.m */,
+				08A73C271FC0124000CDC83D /* UITabBarController+RLNodeSupport.h */,
+				08A73C281FC0124000CDC83D /* UITabBarController+RLNodeSupport.m */,
+				08A73C2D1FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.h */,
+				08A73C2E1FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.m */,
+				08A73C311FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.h */,
+				08A73C321FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.m */,
 			);
 			name = ReactiveLoop;
 			path = ../ReactiveLoop;
@@ -251,6 +314,7 @@
 		084DEC391FA487BD008BF2D2 /* extobjc */ = {
 			isa = PBXGroup;
 			children = (
+				08A73C2B1FC01F9F00CDC83D /* RLEXTKeyPathCoding.h */,
 				084DEC541FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.h */,
 				084DEC551FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m */,
 				084DEC3D1FA487BD008BF2D2 /* RLEXTScope.h */,
@@ -266,22 +330,38 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A73C161FC00B6D00CDC83D /* NSObject+RLNodeSupport.h in Headers */,
+				08A73C2C1FC01F9F00CDC83D /* RLEXTKeyPathCoding.h in Headers */,
+				089DEAB91FC041B60016A087 /* RLFeedback.h in Headers */,
+				089DEABD1FC041F40016A087 /* RLFeedback+Private.h in Headers */,
+				08A73C2F1FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.h in Headers */,
 				084DEC5B1FA4B527008BF2D2 /* NSObject+RLSelectorStream.h in Headers */,
+				08A73C251FC0121C00CDC83D /* UIViewController+RLNodeSupport.h in Headers */,
 				084DEC441FA487BD008BF2D2 /* RLMetamacros.h in Headers */,
 				084DEC561FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.h in Headers */,
+				089DEABF1FC0433E0016A087 /* RLRule+Private.h in Headers */,
 				084DEC511FA4A86C008BF2D2 /* NSObject+RLDeallocating.h in Headers */,
 				080DC5D61FA529DA00982213 /* UIButton+RLNodeSupport.h in Headers */,
 				084DEC361FA485B3008BF2D2 /* RLObserver+Private.h in Headers */,
+				089DEAB51FC02CDF0016A087 /* RLFeedbackCenter.h in Headers */,
 				082E678A1F27452A003775A7 /* RLStream.h in Headers */,
 				082E67821F273D1B003775A7 /* RLLiberation.h in Headers */,
+				08A73C291FC0124000CDC83D /* UITabBarController+RLNodeSupport.h in Headers */,
+				089DEAC11FC043700016A087 /* RLMacros.h in Headers */,
+				089DEAC21FC043700016A087 /* RLRule.h in Headers */,
 				082E677A1F273434003775A7 /* RLNode.h in Headers */,
 				082E676B1F273369003775A7 /* ReactiveLoop.h in Headers */,
 				084DEC311FA4859B008BF2D2 /* RLObserver.h in Headers */,
+				08A73C211FC0120D00CDC83D /* UIView+RLNodeSupport.h in Headers */,
 				084DEC471FA490B9008BF2D2 /* RLStream+Private.h in Headers */,
+				089DEAC01FC043450016A087 /* RLNode+Private.h in Headers */,
 				082E677E1F273485003775A7 /* RLEvent.h in Headers */,
 				084DEC4C1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.h in Headers */,
+				08A73C1D1FC00E1A00CDC83D /* RLStream+RLNodeSupportPrivate.h in Headers */,
+				08A73C101FC0061000CDC83D /* UIControl+RLStreamSupport.h in Headers */,
 				082E67A61F27538C003775A7 /* RLMultiNode.h in Headers */,
 				084DEC431FA487BD008BF2D2 /* RLEXTScope.h in Headers */,
+				08A73C331FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +430,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RL;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Modool;
 				TargetAttributes = {
 					082E67391F273335003775A7 = {
@@ -421,13 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				082E67451F273335003775A7 /* ViewController.m in Sources */,
-				084DEC4D1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m in Sources */,
-				080DC5D71FA529DA00982213 /* UIButton+RLNodeSupport.m in Sources */,
-				084DEC321FA4859B008BF2D2 /* RLObserver.m in Sources */,
-				084DEC571FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m in Sources */,
 				082E67421F273335003775A7 /* AppDelegate.m in Sources */,
-				084DEC5C1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m in Sources */,
-				084DEC521FA4A86C008BF2D2 /* NSObject+RLDeallocating.m in Sources */,
 				082E673F1F273335003775A7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,15 +519,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				084DEC581FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m in Sources */,
+				08A73C111FC0061000CDC83D /* UIControl+RLStreamSupport.m in Sources */,
 				082E678B1F27452A003775A7 /* RLStream.m in Sources */,
 				082E67771F273407003775A7 /* RLRule.m in Sources */,
+				089DEABA1FC041B60016A087 /* RLFeedback.m in Sources */,
+				08A73C341FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.m in Sources */,
 				084DEC331FA4859B008BF2D2 /* RLObserver.m in Sources */,
 				084DEC4E1FA4A6A6008BF2D2 /* NSObject+RLKVOWrapper.m in Sources */,
+				089DEAB61FC02CDF0016A087 /* RLFeedbackCenter.m in Sources */,
+				08A73C221FC0120D00CDC83D /* UIView+RLNodeSupport.m in Sources */,
+				08A73C1E1FC00E1A00CDC83D /* RLStream+RLNodeSupportPrivate.m in Sources */,
 				080DC5D81FA529DA00982213 /* UIButton+RLNodeSupport.m in Sources */,
 				084DEC531FA4A86C008BF2D2 /* NSObject+RLDeallocating.m in Sources */,
 				082E67A71F27538C003775A7 /* RLMultiNode.m in Sources */,
 				082E67831F273D1B003775A7 /* RLLiberation.m in Sources */,
 				082E677B1F273434003775A7 /* RLNode.m in Sources */,
+				08A73C261FC0121C00CDC83D /* UIViewController+RLNodeSupport.m in Sources */,
+				08A73C301FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.m in Sources */,
+				08A73C151FC00B6900CDC83D /* NSObject+RLNodeSupport.m in Sources */,
+				08A73C2A1FC0124000CDC83D /* UITabBarController+RLNodeSupport.m in Sources */,
 				084DEC5D1FA4B527008BF2D2 /* NSObject+RLSelectorStream.m in Sources */,
 				082E677F1F273485003775A7 /* RLEvent.m in Sources */,
 			);
@@ -504,7 +588,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -512,7 +598,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -553,7 +643,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -561,7 +653,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

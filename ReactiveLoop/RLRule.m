@@ -80,7 +80,7 @@
 }
 
 - (__kindof RLRule *)and;{
-    NSParameterAssert([self isKindOfClass:[RLMultiRule class]]);
+    NSParameterAssert([self isKindOfClass:[RLCombinedRule class]]);
     NSArray<RLRule *> *rules = [[(RLMultiRule *)self rules] copy];
     
     return [RLAndRule ruleWithRules:rules];
@@ -91,7 +91,7 @@
 }
 
 - (__kindof RLRule *)or;{
-    NSParameterAssert([self isKindOfClass:[RLMultiRule class]]);
+    NSParameterAssert([self isKindOfClass:[RLCombinedRule class]]);
     NSArray<RLRule *> *rules = [[(RLMultiRule *)self rules] copy];
     return [RLOrRule ruleWithRules:rules];
 }
@@ -131,7 +131,7 @@
 @implementation RLMergedRule
 
 - (instancetype)initWithRules:(NSArray<__kindof RLRule *> *)rules;{
-    NSMutableArray *outpus = [NSMutableArray new];
+    NSMutableArray<RLStream *> *outpus = [[NSMutableArray<RLStream *> alloc] init];
     for (RLRule *rule in rules) {
         [outpus addObject:[rule output]];
     }
@@ -143,7 +143,7 @@
 @implementation RLCombinedRule
 
 - (instancetype)initWithRules:(NSArray<__kindof RLRule *> *)rules;{
-    NSMutableArray *outpus = [NSMutableArray new];
+    NSMutableArray<RLStream *> *outpus = [[NSMutableArray<RLStream *> alloc] init];
     for (RLRule *rule in rules) {
         [outpus addObject:[rule output]];
     }
@@ -155,7 +155,7 @@
 @implementation RLAndRule
 
 - (instancetype)initWithRules:(NSArray<__kindof RLRule *> *)rules;{
-    NSMutableArray *outpus = [NSMutableArray new];
+    NSMutableArray<RLStream *> *outpus = [[NSMutableArray<RLStream *> alloc] init];
     for (RLRule *rule in rules) {
         [outpus addObject:[rule output]];
     }
@@ -178,7 +178,7 @@
 @implementation RLOrRule
 
 - (instancetype)initWithRules:(NSArray<__kindof RLRule *> *)rules;{
-    NSMutableArray *outpus = [NSMutableArray new];
+    NSMutableArray<RLStream *> *outpus = [[NSMutableArray<RLStream *> alloc] init];
     for (RLRule *rule in rules) {
         [outpus addObject:[rule output]];
     }

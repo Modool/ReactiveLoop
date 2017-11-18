@@ -12,8 +12,8 @@
 
 @interface RLObserver : NSObject<RLObserver>
 
-+ (instancetype)observerWithOutput:(void (^)(id value))output completion:(void (^)())completion;
-- (instancetype)initWithOutput:(void (^)(id value))output completion:(void (^)())completion NS_DESIGNATED_INITIALIZER;
++ (instancetype)observerWithOutput:(void (^)(id value))output completion:(void (^)(void))completion;
+- (instancetype)initWithOutput:(void (^)(id value))output completion:(void (^)(void))completion NS_DESIGNATED_INITIALIZER;
 
 @end
 

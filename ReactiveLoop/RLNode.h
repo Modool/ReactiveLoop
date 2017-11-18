@@ -8,23 +8,17 @@
 
 #import "RLStream.h"
 
-@class RLLiberation, RLRule;
+@class RLLiberation, RLRule, RLFeedback;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RLFeedback : NSObject
-
-- (void)cancel;
-
-@end
-
 @interface RLNode : NSObject
-
-@property (nonatomic, assign) BOOL enabled;
 
 @property (nonatomic, copy, readonly) NSString *name;
 
 @property (nonatomic, strong, readonly) id value;
+
+@property (nonatomic, assign) BOOL enabled;
 
 + (instancetype)node;
 + (instancetype)nodeWithRule:(RLRule *)rule;
@@ -44,11 +38,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) RLStream *relatedInfoStream;
 
-- (void)attachInfo:(RLStream *)info;
+- (void)attachStream:(RLStream *)info;
 
 @end
 
-@interface RLNode (RLObserve)
+@interface RLNode (RLeedbackObserve)
 
 - (RLFeedback *)feedbackObserve:(void (^)(id value))block;
 

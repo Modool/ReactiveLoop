@@ -63,7 +63,7 @@ typedef RLStream * _Nullable (^RLStreamBindBlock)(id _Nullable value, BOOL *stop
 
 - (RLLiberation *)observe:(id<RLObserver>)observer;
 - (RLLiberation *)observeOutput:(void (^)(id value))output;
-- (RLLiberation *)observeOutput:(void (^)(id value))output completion:(void (^)())completion;
+- (RLLiberation *)observeOutput:(void (^)(id value))output completion:(void (^)(void))completion;
 
 @end
 

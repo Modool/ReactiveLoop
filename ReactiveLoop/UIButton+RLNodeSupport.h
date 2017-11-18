@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class RLNode;
 @interface UIButton (RLNodeSupport)
+
+// The default node.
+@property (nonatomic, strong, readonly) RLNode *rl_node;
 
 @end

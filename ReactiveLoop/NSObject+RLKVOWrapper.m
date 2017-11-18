@@ -202,7 +202,7 @@ typedef void (^RLKVOBlock)(id target, id observer, NSDictionary *change);
             };
             BOOL isObject = attributes->objectClass != nil || strstr(attributes->type, @encode(id)) == attributes->type;
             BOOL isProtocol = attributes->objectClass == NSClassFromString(@"Protocol");
-            BOOL isBlock = strcmp(attributes->type, @encode(void(^)())) == 0;
+            BOOL isBlock = strcmp(attributes->type, @encode(void(^)(void))) == 0;
             BOOL isWeak = attributes->weak;
             
             shouldAddDeallocObserver = isObject && isWeak && !isBlock && !isProtocol;

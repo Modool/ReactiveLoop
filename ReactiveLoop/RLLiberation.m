@@ -195,7 +195,7 @@
         if (_liberated) {
             shouldLiberate = YES;
         } else {
-            if (!_liberations) _liberations = [NSMutableArray new];
+            if (!_liberations) _liberations = [[NSMutableArray alloc] init];
             
             [_liberations addObject:liberation];
         }

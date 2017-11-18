@@ -71,7 +71,7 @@
         void (^addStream)(RLStream *) = ^(RLStream *stream) {
             OSAtomicIncrement32Barrier(&streamCount);
             
-            RLSerialLiberation *selfLiberation = [RLSerialLiberation new];
+            RLSerialLiberation *selfLiberation = [[RLSerialLiberation alloc] init];
             [compoundLiberation addLiberation:selfLiberation];
             
             RLLiberation *liberation = [stream observeOutput:^(id  _Nonnull value) {
@@ -80,7 +80,7 @@
             selfLiberation.liberation = liberation;
         };
         @autoreleasepool {
-            RLSerialLiberation *selfLiberation = [RLSerialLiberation new];
+            RLSerialLiberation *selfLiberation = [[RLSerialLiberation alloc] init];
             [compoundLiberation addLiberation:selfLiberation];
             
             RLLiberation *bindingLiberation = [self observeOutput:^(id value) {
@@ -180,7 +180,7 @@
     if (!current) return [self empty];
     
     return [current map:^id (NSArray *values) {
-        NSMutableArray *innerValues = [NSMutableArray new];
+        NSMutableArray *innerValues = [[NSMutableArray alloc] init];
         while (values) {
             [innerValues insertObject:values.lastObject ?: NSNull.null atIndex:0];
             values = (values.count > 1 ? values.firstObject : nil);
@@ -436,13 +436,13 @@
 }
 
 - (RLLiberation *)observeOutput:(void (^)(id value))output {
-    NSCParameterAssert(output != NULL);
+    NSCParameterAssert(output);
     
     RLObserver *observer = [RLObserver observerWithOutput:output completion:nil];
     return [self observe:observer];
 }
 
-- (RLLiberation *)observeOutput:(void (^)(id value))output completion:(void (^)())completion;{
+- (RLLiberation *)observeOutput:(void (^)(id value))output completion:(void (^)(void))completion;{
     NSCParameterAssert(output != NULL);
     NSCParameterAssert(completion != NULL);
     
@@ -468,7 +468,7 @@
     static RLEmptyStream *singleton;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        singleton = [self new];
+        singleton = [[self alloc] init];
     });
     
     return singleton;

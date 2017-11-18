@@ -30,7 +30,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        _observers = [NSMutableArray<RLObserver> new];
+        _observers = [[NSMutableArray<RLObserver> alloc] init];
         _liberation = [RLCompoundLiberation compoundLiberation];
     }
     return self;

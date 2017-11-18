@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class RLCompoundLiberation;
-@class RLLiberation;
-@class RLStream;
+@class RLStream, RLCompoundLiberation, RLLiberation;
 
 @interface NSObject (RLDeallocating)
 

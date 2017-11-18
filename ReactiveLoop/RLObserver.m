@@ -15,7 +15,7 @@
 @interface RLObserver ()
 
 @property (nonatomic, copy) void (^output)(id value);
-@property (nonatomic, copy) void (^completion)();
+@property (nonatomic, copy) void (^completion)(void);
 
 @property (nonatomic, strong, readonly) RLCompoundLiberation *liberation;
 
@@ -23,7 +23,7 @@
 
 @implementation RLObserver
 
-+ (instancetype)observerWithOutput:(void (^)(id value))output completion:(void (^)())completion; {
++ (instancetype)observerWithOutput:(void (^)(id value))output completion:(void (^)(void))completion; {
     return [[self alloc] initWithOutput:output completion:completion];
 }
 
@@ -31,7 +31,7 @@
     return [self initWithOutput:nil completion:nil];
 }
 
-- (instancetype)initWithOutput:(void (^)(id value))output completion:(void (^)())completion; {
+- (instancetype)initWithOutput:(void (^)(id value))output completion:(void (^)(void))completion; {
     if (self = [super init]) {
         self.output = output;
         self.completion = completion;
