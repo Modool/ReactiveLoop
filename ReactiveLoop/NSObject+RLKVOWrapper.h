@@ -25,6 +25,6 @@
 #define RLObserve(TARGET, KEYPATH) \
 ({ \
 __weak id target_ = (TARGET); \
-[target_ rl_valuesForKeyPath:@keypath(TARGET, KEYPATH) observer:self]; \
+[target_ rl_valuesForKeyPath:@#KEYPATH observer:self]; \
 })
 #endif

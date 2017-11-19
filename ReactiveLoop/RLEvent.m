@@ -116,7 +116,7 @@
 - (RLLiberation *)observe:(id<RLObserver>)observer {
     RLCompoundLiberation *compoundLiberation = [RLCompoundLiberation compoundLiberation];
     
-    RLLiberation *liberation = [RLLiberation liberationWithBlock:^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         @synchronized (self) {
             if (compoundLiberation.liberated) return;
             
@@ -129,9 +129,7 @@
                 [compoundLiberation addLiberation:subscriptionLiberation];
             }
         }
-    }];
-    
-    [compoundLiberation addLiberation:liberation];
+    });
     
     return compoundLiberation;
 }

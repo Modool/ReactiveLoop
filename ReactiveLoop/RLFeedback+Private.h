@@ -10,15 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class RLNode;
+@class RLNode, RLLiberation;
 @interface RLFeedback (Private)
-
-@property (nonatomic, copy, readonly) void (^block)(_Nullable id value, _Nullable id source);
 
 @property (nonatomic, weak, readonly) RLNode *node;
 
-+ (instancetype)feedbackValue:(nullable id)value node:(RLNode *)node block:(void (^)(_Nullable id value, _Nullable id source))block;
-- (instancetype)initWithValue:(nullable id)value node:(RLNode *)node block:(void (^)(_Nullable id value, _Nullable id source))block;
+@property (nonatomic, strong, readonly) RLLiberation *liberation;
+
++ (instancetype)feedbackValue:(nullable id)value node:(RLNode *)node liberation:(RLLiberation *)liberation;
+- (instancetype)initWithValue:(nullable id)value node:(RLNode *)node liberation:(RLLiberation *)liberation;
 
 @end
 

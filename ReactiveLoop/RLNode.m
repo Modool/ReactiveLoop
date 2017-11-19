@@ -11,9 +11,9 @@
 #import "RLEvent.h"
 #import "RLFeedback+Private.h"
 #import "NSObject+RLKVOWrapper.h"
+#import "NSObject+RLDeallocating.h"
 
 #import "RLEXTScope.h"
-#import "RLEXTKeyPathCoding.h"
 
 @interface RLNode ()
 
@@ -21,7 +21,9 @@
 
 @property (nonatomic, copy) NSString *name;
 
-@property (nonatomic, strong, readonly) RLReplayEvent *infoEvent;
+@property (nonatomic, strong, readonly) RLEvent *infoEvent;
+
+@property (nonatomic, strong, readonly) RLStream *resultStream;
 
 @property (nonatomic, strong, readonly) NSMutableArray<RLRule *> *rules;
 
@@ -62,13 +64,12 @@
     if (self = [super init]) {
         _enabled = YES;
         _feedbacks = [[NSMutableArray<RLFeedback *> alloc] init];
-        _infoEvent = [RLReplayEvent event];
+        _infoEvent = [RLEvent event];
         
         @weakify(self);
         [_infoEvent observeOutput:^(id  _Nonnull value) {
             @strongify(self);
-            [self updateValue:value];
-            [self performFeedbacksWithValue:value];
+            self.value = value;
         }];
     }
     return self;
@@ -87,6 +88,10 @@
     return self;
 }
 
+- (void)dealloc{
+    [_infoEvent complete];
+}
+
 #pragma mark - accessor
 
 - (RLStream *)relatedInfoStream{
@@ -103,16 +108,6 @@
 
 - (void)removeFeedback:(RLFeedback *)feedback{
     [[self feedbacks] removeObject:feedback];
-}
-
-- (void)performFeedbacksWithValue:(id)value{
-    for (RLFeedback *feedback in [self feedbacks]) {
-        feedback.block(feedback.value, value);
-    }
-}
-
-- (void)updateValue:(id)value{
-    self.value = value;
 }
 
 - (void)attachStream:(RLStream *)info;{
@@ -139,7 +134,11 @@
 }
 
 - (RLFeedback *)feedbackValue:(nullable id)value observe:(void (^)(_Nullable id value, _Nullable id source))observeBlock;{
-    RLFeedback *feedback = [RLFeedback feedbackValue:value node:self block:observeBlock];
+    RLLiberation *liberation = [[self infoEvent] observeOutput:^(id  _Nonnull streamValue) {
+        observeBlock(value, streamValue);
+    }];
+    
+    RLFeedback *feedback = [RLFeedback feedbackValue:value node:self liberation:liberation];
     [self addFeedback:feedback];
     
     return feedback;

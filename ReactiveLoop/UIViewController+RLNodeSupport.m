@@ -15,7 +15,7 @@
 
 - (RLNode *)rl_viewDidLoadNode{
     RLNode *node = objc_getAssociatedObject(self, @selector(rl_viewDidLoadNode));
-    if (node) {
+    if (!node) {
         node = [super rl_nodeWithStream:[self rl_streamForSelector:@selector(viewDidLoad)]];
         objc_setAssociatedObject(self, @selector(rl_viewDidLoadNode), node, OBJC_ASSOCIATION_RETAIN);
     }
@@ -24,7 +24,7 @@
 
 - (RLNode *)rl_viewWillAppearNode{
     RLNode *node = objc_getAssociatedObject(self, @selector(rl_viewWillAppearNode));
-    if (node) {
+    if (!node) {
         node = [super rl_nodeWithStream:[self rl_streamForSelector:@selector(viewWillAppear:)]];
         objc_setAssociatedObject(self, @selector(rl_viewWillAppearNode), node, OBJC_ASSOCIATION_RETAIN);
     }
@@ -33,7 +33,7 @@
 
 - (RLNode *)rl_viewDidAppearNode{
     RLNode *node = objc_getAssociatedObject(self, @selector(rl_viewDidAppearNode));
-    if (node) {
+    if (!node) {
         node = [super rl_nodeWithStream:[self rl_streamForSelector:@selector(viewDidAppear:)]];
         objc_setAssociatedObject(self, @selector(rl_viewDidAppearNode), node, OBJC_ASSOCIATION_RETAIN);
     }
@@ -42,7 +42,7 @@
 
 - (RLNode *)rl_viewWillDisappearNode{
     RLNode *node = objc_getAssociatedObject(self, @selector(rl_viewWillDisappearNode));
-    if (node) {
+    if (!node) {
         node = [super rl_nodeWithStream:[self rl_streamForSelector:@selector(viewWillDisappear:)]];
         objc_setAssociatedObject(self, @selector(rl_viewWillDisappearNode), node, OBJC_ASSOCIATION_RETAIN);
     }
@@ -51,7 +51,7 @@
 
 - (RLNode *)rl_viewDidDisappearNode{
     RLNode *node = objc_getAssociatedObject(self, @selector(rl_viewDidDisappearNode));
-    if (node) {
+    if (!node) {
         node = [super rl_nodeWithStream:[self rl_streamForSelector:@selector(viewDidDisappear:)]];
         objc_setAssociatedObject(self, @selector(rl_viewDidDisappearNode), node, OBJC_ASSOCIATION_RETAIN);
     }

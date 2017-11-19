@@ -17,7 +17,7 @@
 
 - (RLNode *)rl_node{
     RLNode *node = objc_getAssociatedObject(self, @selector(rl_node));
-    if (node) {
+    if (!node) {
         node = [[super rl_nodeWithStream:[self rl_signalForControlEvents:UIControlEventTouchUpInside]] setNameWithFormat:@"%@.%d", NSStringFromClass([self class]), (NSUInteger)self];
         objc_setAssociatedObject(self, @selector(rl_node), node, OBJC_ASSOCIATION_RETAIN);
     }

@@ -10,7 +10,6 @@
 #import "NSNotificationCenter+RLNodeSupport.h"
 #import "NSObject+RLNodeSupport.h"
 #import "NSObject+RLKVOWrapper.h"
-#import "RLEXTKeyPathCoding.h"
 #import "RLEXTScope.h"
 #import "RLStream.h"
 #import "RLObserver.h"

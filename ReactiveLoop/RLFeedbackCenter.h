@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RLFeedbackCenter : NSObject
 
+//@property (nonatomic, copy)
+
+//+ (instancetype)defaultCenter;
+
 @end
 
 NS_ASSUME_NONNULL_END

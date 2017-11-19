@@ -18,7 +18,7 @@
 
 - (RLNode *)rl_moveInSuperviewNode{
     RLNode *node = objc_getAssociatedObject(self, @selector(rl_moveInSuperviewNode));
-    if (node) {
+    if (!node) {
         node = [super rl_nodeWithStream:[self rl_streamForSelector:@selector(didMoveToSuperview)]];
         objc_setAssociatedObject(self, @selector(rl_moveInSuperviewNode), node, OBJC_ASSOCIATION_RETAIN);
     }
@@ -27,7 +27,7 @@
 
 - (RLNode *)rl_moveOutSuperviewNode{
     RLNode *node = objc_getAssociatedObject(self, @selector(rl_moveOutSuperviewNode));
-    if (node) {
+    if (!node) {
         node = [super rl_nodeWithStream:[[self rl_streamForSelector:@selector(willMoveToSuperview:)] filter:^BOOL(NSArray *arguments) {
             return [arguments lastObject] != nil;
         }]];
@@ -38,7 +38,7 @@
 
 - (RLNode *)rl_layoutSubviewsNode{
     RLNode *node = objc_getAssociatedObject(self, @selector(rl_layoutSubviewsNode));
-    if (node) {
+    if (!node) {
         node = [super rl_nodeWithStream:[self rl_streamForSelector:@selector(layoutSubviews)]];
         objc_setAssociatedObject(self, @selector(rl_layoutSubviewsNode), node, OBJC_ASSOCIATION_RETAIN);
     }

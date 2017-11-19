@@ -9,16 +9,13 @@
 /* Begin PBXBuildFile section */
 		080DC5D61FA529DA00982213 /* UIButton+RLNodeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 080DC5D41FA529DA00982213 /* UIButton+RLNodeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		080DC5D81FA529DA00982213 /* UIButton+RLNodeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 080DC5D51FA529DA00982213 /* UIButton+RLNodeSupport.m */; };
-		082E673F1F273335003775A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E673E1F273335003775A7 /* main.m */; };
-		082E67421F273335003775A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67411F273335003775A7 /* AppDelegate.m */; };
-		082E67451F273335003775A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67441F273335003775A7 /* ViewController.m */; };
-		082E67481F273335003775A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082E67461F273335003775A7 /* Main.storyboard */; };
-		082E674A1F273335003775A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 082E67491F273335003775A7 /* Assets.xcassets */; };
-		082E674D1F273335003775A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082E674B1F273335003775A7 /* LaunchScreen.storyboard */; };
-		082E67581F273335003775A7 /* ReactiveLoopDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67571F273335003775A7 /* ReactiveLoopDemoUITests.m */; };
+		081065571FC16B9A00296CC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 081065561FC16B9A00296CC7 /* AppDelegate.m */; };
+		0810655A1FC16B9A00296CC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081065591FC16B9A00296CC7 /* ViewController.m */; };
+		0810655F1FC16B9A00296CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0810655E1FC16B9A00296CC7 /* Assets.xcassets */; };
+		081065621FC16B9A00296CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081065601FC16B9A00296CC7 /* LaunchScreen.storyboard */; };
+		081065651FC16B9A00296CC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 081065641FC16B9A00296CC7 /* main.m */; };
+		0810656C1FC16D8D00296CC7 /* ReactiveLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082E67671F273369003775A7 /* ReactiveLoop.framework */; };
 		082E676B1F273369003775A7 /* ReactiveLoop.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67691F273369003775A7 /* ReactiveLoop.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		082E676E1F273369003775A7 /* ReactiveLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082E67671F273369003775A7 /* ReactiveLoop.framework */; };
-		082E676F1F273369003775A7 /* ReactiveLoop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 082E67671F273369003775A7 /* ReactiveLoop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		082E67771F273407003775A7 /* RLRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67751F273403003775A7 /* RLRule.m */; };
 		082E677A1F273434003775A7 /* RLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E67781F273434003775A7 /* RLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		082E677B1F273434003775A7 /* RLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 082E67791F273434003775A7 /* RLNode.m */; };
@@ -65,7 +62,6 @@
 		08A73C261FC0121C00CDC83D /* UIViewController+RLNodeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A73C241FC0121C00CDC83D /* UIViewController+RLNodeSupport.m */; };
 		08A73C291FC0124000CDC83D /* UITabBarController+RLNodeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A73C271FC0124000CDC83D /* UITabBarController+RLNodeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A73C2A1FC0124000CDC83D /* UITabBarController+RLNodeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A73C281FC0124000CDC83D /* UITabBarController+RLNodeSupport.m */; };
-		08A73C2C1FC01F9F00CDC83D /* RLEXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A73C2B1FC01F9F00CDC83D /* RLEXTKeyPathCoding.h */; };
 		08A73C2F1FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A73C2D1FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A73C301FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A73C2E1FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.m */; };
 		08A73C331FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A73C311FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -73,14 +69,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		082E67541F273335003775A7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 082E67321F273335003775A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 082E67391F273335003775A7;
-			remoteInfo = ReactiveLoopDemo;
-		};
-		082E676C1F273369003775A7 /* PBXContainerItemProxy */ = {
+		081065691FC16BE400296CC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 082E67321F273335003775A7 /* Project object */;
 			proxyType = 1;
@@ -89,38 +78,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		082E67731F273369003775A7 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				082E676F1F273369003775A7 /* ReactiveLoop.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		080DC5CE1FA4F97800982213 /* RLRule+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RLRule+Private.h"; sourceTree = "<group>"; };
 		080DC5D11FA51D3200982213 /* RLNode+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RLNode+Private.h"; sourceTree = "<group>"; };
 		080DC5D41FA529DA00982213 /* UIButton+RLNodeSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+RLNodeSupport.h"; sourceTree = "<group>"; };
 		080DC5D51FA529DA00982213 /* UIButton+RLNodeSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RLNodeSupport.m"; sourceTree = "<group>"; };
-		082E673A1F273335003775A7 /* ReactiveLoopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveLoopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		082E673E1F273335003775A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		082E67401F273335003775A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		082E67411F273335003775A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		082E67431F273335003775A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		082E67441F273335003775A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		082E67471F273335003775A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		082E67491F273335003775A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		082E674C1F273335003775A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		082E674E1F273335003775A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		082E67531F273335003775A7 /* ReactiveLoopDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveLoopDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		082E67571F273335003775A7 /* ReactiveLoopDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveLoopDemoUITests.m; sourceTree = "<group>"; };
-		082E67591F273335003775A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0810654D1FC16B5700296CC7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		081065531FC16B9A00296CC7 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		081065551FC16B9A00296CC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		081065561FC16B9A00296CC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		081065581FC16B9A00296CC7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		081065591FC16B9A00296CC7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0810655E1FC16B9A00296CC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		081065611FC16B9A00296CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		081065631FC16B9A00296CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081065641FC16B9A00296CC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		082E67671F273369003775A7 /* ReactiveLoop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveLoop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		082E67691F273369003775A7 /* ReactiveLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveLoop.h; sourceTree = "<group>"; };
 		082E67741F273403003775A7 /* RLRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLRule.h; sourceTree = "<group>"; };
@@ -167,7 +139,6 @@
 		08A73C241FC0121C00CDC83D /* UIViewController+RLNodeSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RLNodeSupport.m"; sourceTree = "<group>"; };
 		08A73C271FC0124000CDC83D /* UITabBarController+RLNodeSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+RLNodeSupport.h"; sourceTree = "<group>"; };
 		08A73C281FC0124000CDC83D /* UITabBarController+RLNodeSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+RLNodeSupport.m"; sourceTree = "<group>"; };
-		08A73C2B1FC01F9F00CDC83D /* RLEXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLEXTKeyPathCoding.h; sourceTree = "<group>"; };
 		08A73C2D1FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+RLNodeSupport.h"; sourceTree = "<group>"; };
 		08A73C2E1FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+RLNodeSupport.m"; sourceTree = "<group>"; };
 		08A73C311FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+RLNodeSupport.h"; sourceTree = "<group>"; };
@@ -175,18 +146,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		082E67371F273335003775A7 /* Frameworks */ = {
+		081065501FC16B9A00296CC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				082E676E1F273369003775A7 /* ReactiveLoop.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		082E67501F273335003775A7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0810656C1FC16D8D00296CC7 /* ReactiveLoop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,57 +164,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0810654C1FC16B3D00296CC7 /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				0810654D1FC16B5700296CC7 /* Info.plist */,
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
+		081065541FC16B9A00296CC7 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				081065551FC16B9A00296CC7 /* AppDelegate.h */,
+				081065561FC16B9A00296CC7 /* AppDelegate.m */,
+				081065581FC16B9A00296CC7 /* ViewController.h */,
+				081065591FC16B9A00296CC7 /* ViewController.m */,
+				0810655E1FC16B9A00296CC7 /* Assets.xcassets */,
+				081065601FC16B9A00296CC7 /* LaunchScreen.storyboard */,
+				081065631FC16B9A00296CC7 /* Info.plist */,
+				081065641FC16B9A00296CC7 /* main.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		0810656B1FC16D8D00296CC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		082E67311F273335003775A7 = {
 			isa = PBXGroup;
 			children = (
-				082E673C1F273335003775A7 /* ReactiveLoopDemo */,
-				082E67561F273335003775A7 /* ReactiveLoopDemoUITests */,
+				081065541FC16B9A00296CC7 /* Demo */,
 				082E67681F273369003775A7 /* ReactiveLoop */,
+				0810654C1FC16B3D00296CC7 /* Supporting File */,
 				082E673B1F273335003775A7 /* Products */,
+				0810656B1FC16D8D00296CC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		082E673B1F273335003775A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				082E673A1F273335003775A7 /* ReactiveLoopDemo.app */,
-				082E67531F273335003775A7 /* ReactiveLoopDemoUITests.xctest */,
 				082E67671F273369003775A7 /* ReactiveLoop.framework */,
+				081065531FC16B9A00296CC7 /* Demo.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		082E673C1F273335003775A7 /* ReactiveLoopDemo */ = {
-			isa = PBXGroup;
-			children = (
-				082E67401F273335003775A7 /* AppDelegate.h */,
-				082E67411F273335003775A7 /* AppDelegate.m */,
-				082E67431F273335003775A7 /* ViewController.h */,
-				082E67441F273335003775A7 /* ViewController.m */,
-				082E67461F273335003775A7 /* Main.storyboard */,
-				082E67491F273335003775A7 /* Assets.xcassets */,
-				082E674B1F273335003775A7 /* LaunchScreen.storyboard */,
-				082E674E1F273335003775A7 /* Info.plist */,
-				082E673D1F273335003775A7 /* Supporting Files */,
-			);
-			path = ReactiveLoopDemo;
-			sourceTree = "<group>";
-		};
-		082E673D1F273335003775A7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				082E673E1F273335003775A7 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		082E67561F273335003775A7 /* ReactiveLoopDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				082E67571F273335003775A7 /* ReactiveLoopDemoUITests.m */,
-				082E67591F273335003775A7 /* Info.plist */,
-			);
-			path = ReactiveLoopDemoUITests;
 			sourceTree = "<group>";
 		};
 		082E67681F273369003775A7 /* ReactiveLoop */ = {
@@ -307,14 +268,12 @@
 				08A73C311FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.h */,
 				08A73C321FC029D700CDC83D /* NSNotificationCenter+RLNodeSupport.m */,
 			);
-			name = ReactiveLoop;
-			path = ../ReactiveLoop;
+			path = ReactiveLoop;
 			sourceTree = "<group>";
 		};
 		084DEC391FA487BD008BF2D2 /* extobjc */ = {
 			isa = PBXGroup;
 			children = (
-				08A73C2B1FC01F9F00CDC83D /* RLEXTKeyPathCoding.h */,
 				084DEC541FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.h */,
 				084DEC551FA4B2A5008BF2D2 /* RLEXTRuntimeExtensions.m */,
 				084DEC3D1FA487BD008BF2D2 /* RLEXTScope.h */,
@@ -331,7 +290,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				08A73C161FC00B6D00CDC83D /* NSObject+RLNodeSupport.h in Headers */,
-				08A73C2C1FC01F9F00CDC83D /* RLEXTKeyPathCoding.h in Headers */,
 				089DEAB91FC041B60016A087 /* RLFeedback.h in Headers */,
 				089DEABD1FC041F40016A087 /* RLFeedback+Private.h in Headers */,
 				08A73C2F1FC027AA00CDC83D /* UIGestureRecognizer+RLNodeSupport.h in Headers */,
@@ -368,42 +326,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		082E67391F273335003775A7 /* ReactiveLoopDemo */ = {
+		081065521FC16B9A00296CC7 /* Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 082E675C1F273335003775A7 /* Build configuration list for PBXNativeTarget "ReactiveLoopDemo" */;
+			buildConfigurationList = 081065661FC16B9A00296CC7 /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
-				082E67361F273335003775A7 /* Sources */,
-				082E67371F273335003775A7 /* Frameworks */,
-				082E67381F273335003775A7 /* Resources */,
-				082E67731F273369003775A7 /* Embed Frameworks */,
+				0810654F1FC16B9A00296CC7 /* Sources */,
+				081065501FC16B9A00296CC7 /* Frameworks */,
+				081065511FC16B9A00296CC7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				082E676D1F273369003775A7 /* PBXTargetDependency */,
+				0810656A1FC16BE400296CC7 /* PBXTargetDependency */,
 			);
-			name = ReactiveLoopDemo;
-			productName = ReactiveLoopDemo;
-			productReference = 082E673A1F273335003775A7 /* ReactiveLoopDemo.app */;
+			name = Demo;
+			productName = Demo;
+			productReference = 081065531FC16B9A00296CC7 /* Demo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		082E67521F273335003775A7 /* ReactiveLoopDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 082E675F1F273335003775A7 /* Build configuration list for PBXNativeTarget "ReactiveLoopDemoUITests" */;
-			buildPhases = (
-				082E674F1F273335003775A7 /* Sources */,
-				082E67501F273335003775A7 /* Frameworks */,
-				082E67511F273335003775A7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				082E67551F273335003775A7 /* PBXTargetDependency */,
-			);
-			name = ReactiveLoopDemoUITests;
-			productName = ReactiveLoopDemoUITests;
-			productReference = 082E67531F273335003775A7 /* ReactiveLoopDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		082E67661F273369003775A7 /* ReactiveLoop */ = {
 			isa = PBXNativeTarget;
@@ -433,14 +372,9 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Modool;
 				TargetAttributes = {
-					082E67391F273335003775A7 = {
-						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Manual;
-					};
-					082E67521F273335003775A7 = {
-						CreatedOnToolsVersion = 8.3.3;
+					081065521FC16B9A00296CC7 = {
+						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 082E67391F273335003775A7;
 					};
 					082E67661F273369003775A7 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -448,7 +382,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 082E67351F273335003775A7 /* Build configuration list for PBXProject "ReactiveLoopDemo" */;
+			buildConfigurationList = 082E67351F273335003775A7 /* Build configuration list for PBXProject "ReactiveLoop" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -461,28 +395,19 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				082E67391F273335003775A7 /* ReactiveLoopDemo */,
-				082E67521F273335003775A7 /* ReactiveLoopDemoUITests */,
 				082E67661F273369003775A7 /* ReactiveLoop */,
+				081065521FC16B9A00296CC7 /* Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		082E67381F273335003775A7 /* Resources */ = {
+		081065511FC16B9A00296CC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				082E674D1F273335003775A7 /* LaunchScreen.storyboard in Resources */,
-				082E674A1F273335003775A7 /* Assets.xcassets in Resources */,
-				082E67481F273335003775A7 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		082E67511F273335003775A7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				081065621FC16B9A00296CC7 /* LaunchScreen.storyboard in Resources */,
+				0810655F1FC16B9A00296CC7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,21 +421,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		082E67361F273335003775A7 /* Sources */ = {
+		0810654F1FC16B9A00296CC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				082E67451F273335003775A7 /* ViewController.m in Sources */,
-				082E67421F273335003775A7 /* AppDelegate.m in Sources */,
-				082E673F1F273335003775A7 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		082E674F1F273335003775A7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				082E67581F273335003775A7 /* ReactiveLoopDemoUITests.m in Sources */,
+				0810655A1FC16B9A00296CC7 /* ViewController.m in Sources */,
+				081065651FC16B9A00296CC7 /* main.m in Sources */,
+				081065571FC16B9A00296CC7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,31 +463,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		082E67551F273335003775A7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 082E67391F273335003775A7 /* ReactiveLoopDemo */;
-			targetProxy = 082E67541F273335003775A7 /* PBXContainerItemProxy */;
-		};
-		082E676D1F273369003775A7 /* PBXTargetDependency */ = {
+		0810656A1FC16BE400296CC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 082E67661F273369003775A7 /* ReactiveLoop */;
-			targetProxy = 082E676C1F273369003775A7 /* PBXContainerItemProxy */;
+			targetProxy = 081065691FC16BE400296CC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		082E67461F273335003775A7 /* Main.storyboard */ = {
+		081065601FC16B9A00296CC7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				082E67471F273335003775A7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		082E674B1F273335003775A7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				082E674C1F273335003775A7 /* Base */,
+				081065611FC16B9A00296CC7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -578,6 +482,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		081065671FC16B9A00296CC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.markejave.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		081065681FC16B9A00296CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.markejave.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		082E675A1F273335003775A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -682,56 +622,6 @@
 			};
 			name = Release;
 		};
-		082E675D1F273335003775A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = ReactiveLoopDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.markejave.ReactiveLoopDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-			};
-			name = Debug;
-		};
-		082E675E1F273335003775A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = ReactiveLoopDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.markejave.ReactiveLoopDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-			};
-			name = Release;
-		};
-		082E67601F273335003775A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ReactiveLoopDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.markejave.ReactiveLoopDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ReactiveLoopDemo;
-			};
-			name = Debug;
-		};
-		082E67611F273335003775A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ReactiveLoopDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.markejave.ReactiveLoopDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ReactiveLoopDemo;
-			};
-			name = Release;
-		};
 		082E67701F273369003775A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -741,6 +631,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -761,6 +652,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -775,29 +667,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		082E67351F273335003775A7 /* Build configuration list for PBXProject "ReactiveLoopDemo" */ = {
+		081065661FC16B9A00296CC7 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081065671FC16B9A00296CC7 /* Debug */,
+				081065681FC16B9A00296CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		082E67351F273335003775A7 /* Build configuration list for PBXProject "ReactiveLoop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				082E675A1F273335003775A7 /* Debug */,
 				082E675B1F273335003775A7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		082E675C1F273335003775A7 /* Build configuration list for PBXNativeTarget "ReactiveLoopDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				082E675D1F273335003775A7 /* Debug */,
-				082E675E1F273335003775A7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		082E675F1F273335003775A7 /* Build configuration list for PBXNativeTarget "ReactiveLoopDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				082E67601F273335003775A7 /* Debug */,
-				082E67611F273335003775A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -45,13 +45,8 @@
 }
 
 - (RLNode *)rl_nodeWithSelector:(SEL)selector;{
-    if (![self respondsToSelector:selector]) return nil;
     RLStream *stream = [self rl_streamForSelector:selector];
-    RLNode *node = [stream node];
-    
-    [[self rl_associated_nodes] addObject:node];
-    
-    return node;
+    return [self rl_nodeWithStream:stream];
 }
 
 - (RLNode *)rl_nodeWithRule:(RLRule *)rule stream:(RLStream *)stream;{
@@ -70,15 +65,11 @@
 }
 
 - (RLNode *)rl_nodeWithRule:(RLRule *)rule forSelector:(SEL)selector;{
-    if (![self respondsToSelector:selector]) return nil;
-    
     RLStream *stream = [self rl_streamForSelector:selector];
     return [self rl_nodeWithRule:rule stream:stream];
 }
 
 - (RLNode *)rl_nodeWithRules:(NSArray<RLRule *> *)rules forSelector:(SEL)selector;{
-    if (![self respondsToSelector:selector]) return nil;
-    
     RLStream *stream = [self rl_streamForSelector:selector];
     return [self rl_nodeWithRules:rules stream:stream];
 }

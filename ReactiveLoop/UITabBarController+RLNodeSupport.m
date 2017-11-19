@@ -10,14 +10,13 @@
 #import "UITabBarController+RLNodeSupport.h"
 #import "NSObject+RLNodeSupport.h"
 #import "NSObject+RLKVOWrapper.h"
-#import "RLEXTKeyPathCoding.h"
 #import "RLStream.h"
 
 @implementation UITabBarController (RLNodeSupport)
 
 - (RLNode *)rl_selectedIndexNode{
     RLNode *node = objc_getAssociatedObject(self, @selector(rl_selectedIndexNode));
-    if (node) {
+    if (!node) {
         node = [super rl_nodeWithStream:RLObserve(self, selectedIndex)];
         objc_setAssociatedObject(self, @selector(rl_selectedIndexNode), node, OBJC_ASSOCIATION_RETAIN);
     }

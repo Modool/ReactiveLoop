@@ -10,31 +10,38 @@
 #import "RLFeedback+Private.h"
 #import "RLNode+Private.h"
 
+#import "RLLiberation.h"
+
 @interface RLFeedback ()
 
 @property (nonatomic, weak, readonly) RLNode *node;
 
-@property (nonatomic, copy, readonly) void (^block)(_Nullable id value, _Nullable id source);
+@property (nonatomic, strong, readonly) RLLiberation *liberation;
 
 @end
 
 @implementation RLFeedback
 
-+ (instancetype)feedbackValue:(nullable id)value node:(RLNode *)node block:(void (^)(_Nullable id value, _Nullable id source))block;{
-    return [[self alloc] initWithValue:value node:node block:block];
++ (instancetype)feedbackValue:(nullable id)value node:(RLNode *)node liberation:(RLLiberation *)liberation{
+    return [[self alloc] initWithValue:value node:node liberation:liberation];
 }
 
-- (instancetype)initWithValue:(nullable id)value node:(RLNode *)node block:(void (^)(_Nullable id value, _Nullable id source))block;{
+- (instancetype)initWithValue:(nullable id)value node:(RLNode *)node liberation:(RLLiberation *)liberation{
     if (self = [super init]) {
         _value = value;
         _node = node;
-        _block = [block copy];
+        _liberation = liberation;
     }
     return self;
 }
 
 - (void)cancel{
     [[self node] removeFeedback:self];
+    [[self liberation] liberate];
+}
+
+- (void)dealloc{
+    [self cancel];
 }
 
 @end
